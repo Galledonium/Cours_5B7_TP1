@@ -1,0 +1,73 @@
+2019-10-09 17:34:19 Notice: Notice (8): Undefined index: Users in [C:\UniServerZ\www\GIT_Cours_5A5_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 250]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 250
+Twig\Template::getAttribute() - ROOT\vendor\twig\twig\src\Template.php, line 704
+__TwigTemplate_da12886cb07f787cd1dc70999485f7cebb753aed0a35b1501f760465c1f0d5fc::doDisplay() - ROOT\tmp\cache\twigView\f3\f3fb889925df9eba2127ee76b36b4490a233b5013b2a3e73230155f4e4b0a461.php, line 33
+Twig\Template::displayWithErrorHandling() - ROOT\vendor\twig\twig\src\Template.php, line 455
+Twig\Template::display() - ROOT\vendor\twig\twig\src\Template.php, line 422
+Twig\Template::render() - ROOT\vendor\twig\twig\src\Template.php, line 434
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 1017
+Bake\Shell\Task\ModelTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 279
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 65
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 280
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 385
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 162
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2019-10-09 17:35:41 Notice: Notice (8): Undefined index: Paiements in [C:\UniServerZ\www\GIT_Cours_5A5_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 250]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Bake\View\Helper\DocBlockHelper::buildTableAnnotations() - ROOT\vendor\cakephp\bake\src\View\Helper\DocBlockHelper.php, line 250
+Twig\Template::getAttribute() - ROOT\vendor\twig\twig\src\Template.php, line 704
+__TwigTemplate_da12886cb07f787cd1dc70999485f7cebb753aed0a35b1501f760465c1f0d5fc::doDisplay() - ROOT\tmp\cache\twigView\f3\f3fb889925df9eba2127ee76b36b4490a233b5013b2a3e73230155f4e4b0a461.php, line 33
+Twig\Template::displayWithErrorHandling() - ROOT\vendor\twig\twig\src\Template.php, line 455
+Twig\Template::display() - ROOT\vendor\twig\twig\src\Template.php, line 422
+Twig\Template::render() - ROOT\vendor\twig\twig\src\Template.php, line 434
+WyriHaximus\TwigView\View\TwigView::_render() - ROOT\vendor\wyrihaximus\twig-view\src\View\TwigView.php, line 180
+Bake\View\BakeView::render() - ROOT\vendor\cakephp\bake\src\View\BakeView.php, line 146
+Bake\Shell\Task\BakeTemplateTask::generate() - ROOT\vendor\cakephp\bake\src\Shell\Task\BakeTemplateTask.php, line 91
+Bake\Shell\Task\ModelTask::bakeTable() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 1017
+Bake\Shell\Task\ModelTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 115
+Bake\Shell\Task\ModelTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ModelTask.php, line 101
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 279
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 65
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 280
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 385
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 162
+[main] - ROOT\bin\cake.php, line 12
+
+
+
+2019-10-15 23:58:30 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\UniServerZ\www\GIT_Cours_5A5_TP\Application_Mobile_5B7\Cours_5B7_TP1\src\Controller\AppController.php, line: 75
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\UniServerZ\www\GIT_Cours_5A5_TP\Application_Mobile_5B7\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 311]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+deprecationWarning - CORE\src\Core\functions.php, line 311
+Cake\Http\ServerRequest::session() - CORE\src\Http\ServerRequest.php, line 570
+App\Controller\AppController::initialize() - APP/Controller\AppController.php, line 75
+Cake\Controller\Controller::__construct() - CORE\src\Controller\Controller.php, line 273
+Bake\Shell\Task\TestTask::buildTestSubject() - ROOT\vendor\cakephp\bake\src\Shell\Task\TestTask.php, line 330
+Bake\Shell\Task\TestTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\TestTask.php, line 237
+Bake\Shell\Task\ControllerTask::bakeTest() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 213
+Bake\Shell\Task\ControllerTask::bake() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 162
+Bake\Shell\Task\ControllerTask::main() - ROOT\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php, line 69
+Bake\Shell\BakeShell::Bake\Shell\{closure}() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 279
+Cake\Collection\Collection::each() - CORE\src\Collection\CollectionTrait.php, line 65
+Bake\Shell\BakeShell::all() - ROOT\vendor\cakephp\bake\src\Shell\BakeShell.php, line 280
+Cake\Console\Shell::runCommand() - CORE\src\Console\Shell.php, line 518
+Cake\Console\CommandRunner::runShell() - CORE\src\Console\CommandRunner.php, line 385
+Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 162
+[main] - ROOT\bin\cake.php, line 12
+
+
+

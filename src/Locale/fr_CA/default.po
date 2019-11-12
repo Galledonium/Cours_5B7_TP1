@@ -1,0 +1,50 @@
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "msg"
+msgstr "Exemple CakePHP internationalisation."
+
+msgid "lang"
+msgstr "Langue"
+
+msgid "langchg"
+msgstr "Changer le langage"
+
+msgid "msgAfficherPaiements"
+msgstr "Mes Paiements"
+
+msgid "msgAcheter"
+msgstr "Acheter"
+
+msgid "traductionAnglais"
+msgstr "Anglais"
+
+msgid "traductionFrancais"
+msgstr "Francais"
+
+msgid "traductionJaponais"
+msgstr "Japonais"
+
+msgid "msgDesc"
+msgstr "Achat d'applications mobiles"
+
+msgid "msgTitre"
+msgstr "Applications"
+
+msgid "msgActions"
+msgstr "ACTIONS"
+
+msgid "msgBienvenue"
+msgstr "Bienvenue"
+
+msgid "msglogin"
+msgstr "Se connecter"
+
+msgid "msgCreerCompte"
+msgstr "Creer un compte"
+
+msgid "msglogout"
+msgstr "Se deconnecter"
+
+msgid "msgAPropos"
+msgstr "A Propos"

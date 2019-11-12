@@ -1,0 +1,71 @@
+
+*Les fonctionnalités qui vous ont été demandées dans les documents suivants doivent toutes être présentes:
+	
+	-Utilisation du Framework CakePHP pour concevoir un site web sécurisé;
+	-Construire un prototype d'application web avec la commande bake de CakePhp 
+	-Ajouter la fonctionalité de téléversement d'image dans CakePHP
+
+
+*Permettez l'inscription d'un nouvel utilisateur (de niveau "super-utilisateur") en effectuant le traitement suivant:
+	
+	-Envoyez un courriel comprenant un lien de confirmation à l'adresse courriel donnée lors de l'inscription. Ce lien doit invoquer l'action d'un contrôleur permettant d'enregistrer la confirmation du courriel de l'utilisateur dans la BD.
+		
+		-Utilisez la méthode "uuid" de la classe "text" de CakePHP afin de générer un code de confirmation.
+
+	-Tant que son courriel n'est pas confirmé, un nouvel utilisateur n'aura pas les mêmes droits qu'il aurait en le confirmant.
+		
+		-À chaque fois qu'un utilisateur démarre une session, vous devez vérifier si son courriel est confirmé. S'il ne l'est pas, vous devez afficher un message indiquant clairement les restrictions qui s'appliquent. Vous devez aussi offrir de renvoyer le courriel de confirmation.
+		
+		-Vous êtes libre de déterminer quelles sont les restrictions applicables aux nouveaux utilisateurs selon votre type d'application.
+
+
+*Les vues associées aux actions typiques (CLÉE/CRUD) du contrôleur d'accueil de votre application, ainsi que celles d'au moins un autre contrôleur dont les modèles sont associés (par exemple celui des utilisateurs), doivent être modifiés de la façon suivante :
+	
+	-Certaines commandes ne seront visibles que pour les "super-utilisateurs" et d'autres que pour les "administrateurs".
+	
+	-Les vues correspondant aux actions "index" de votre application doivent être nettoyées pour n'afficher que les champs pertinents. Par exemple:
+		
+		-On ne devrait pas voir la valeur des champs "id" (vous pouvez bien sûr en conserver l'affichage pour la phase de débogage) ;
+
+		-La liste des utilisateurs ne devrait pas afficher les mots de passe "hashés";
+
+		-On ne devrait pas afficher les champs de texte multi-lignes;
+
+		-Les images doivent être de petites dimensions;
+
+		-Le résumé d'un enregistrement de l'action "index" doit être léger. Si l'utilisateur veut plus de détails, il est alors possible de visualiser l'enregistrement individuellement
+
+
+*Le menu doit offrir un lien vers le "profil" (view) de l'utilisateur en session, ainsi qu'un autre pour la déconnexion :
+	
+	-Un "admin" doit pouvoir accéder à tous les profils ;
+
+	-Un "super-utilisateur" ne doit pouvoir accéder qu'au sien.
+
+
+*La langue d'affichage par défaut doit être une version traduite en français pour l'interface du contrôleur d'accueil et pour l'autre que vous aurez choisi :
+
+	-La version originale en anglais et aussi dans une troisième langue doivent également être accessibles par des commandes du menu.
+
+
+*Vous devez ajouter une page d'informations "à propos" de votre application web. Cette page d'information doit être disponible à partir du menu principal et contenir:
+	
+	-Votre nom.
+
+	-Le titre du cours:
+
+		-420-5b7 MO Applications internet.
+
+		-Automne 2018, Collège Montmorency.
+
+	-Une description sommaires des étapes d'utilisation typiques permettant de vérifier le bon fonctionnement de votre application web:
+
+		-Vous devez indiquer clairement comment et avec quels éléments de vos pages interagir:
+
+		-Vous devez aussi indiquer le résultat qui est attendu et éventuellement si cela ne fonctionne pas complètement.
+
+		-Ces étapes doivent permettre de vérifier les exigences du TP1 (Grille d'évaluation).
+
+	-Le diagramme de la base de données actuelle utilisée par votre application;
+	
+	-Un lien vers l'emplacement d'où provient le diagramme original.

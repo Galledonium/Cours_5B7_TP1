@@ -1,0 +1,893 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-10-14 17:39-0400\n"
+"PO-Revision-Date: 2019-10-14 17:39-0400\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.4\n"
+"Last-Translator: \n"
+"Language: en_US\n"
+
+#: /Controller/ApplicationsController.php:65
+#: /Controller/ApplicationsController.php:90
+msgid "The application has been saved."
+msgstr ""
+
+#: /Controller/ApplicationsController.php:69
+#: /Controller/ApplicationsController.php:94
+msgid "The application could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/ApplicationsController.php:112
+msgid "The application has been deleted."
+msgstr ""
+
+#: /Controller/ApplicationsController.php:114
+msgid "The application could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/ApplicationsUsersController.php:57
+#: /Controller/ApplicationsUsersController.php:83
+msgid "The applications user has been saved."
+msgstr ""
+
+#: /Controller/ApplicationsUsersController.php:61
+#: /Controller/ApplicationsUsersController.php:87
+msgid "The applications user could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/ApplicationsUsersController.php:106
+msgid "The applications user has been deleted."
+msgstr ""
+
+#: /Controller/ApplicationsUsersController.php:108
+msgid "The applications user could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/EvaluationsController.php:54
+#: /Controller/EvaluationsController.php:79
+msgid "The evaluation has been saved."
+msgstr ""
+
+#: /Controller/EvaluationsController.php:58
+#: /Controller/EvaluationsController.php:83
+msgid "The evaluation could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/EvaluationsController.php:101
+msgid "The evaluation has been deleted."
+msgstr ""
+
+#: /Controller/EvaluationsController.php:103
+msgid "The evaluation could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/PaiementsController.php:107
+#: /Controller/PaiementsController.php:144
+msgid "The paiement has been saved."
+msgstr ""
+
+#: /Controller/PaiementsController.php:111
+#: /Controller/PaiementsController.php:148
+msgid "The paiement could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/PaiementsController.php:168
+msgid "The paiement has been deleted."
+msgstr ""
+
+#: /Controller/PaiementsController.php:170
+msgid "The paiement could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/TypesPaiementsController.php:54
+#: /Controller/TypesPaiementsController.php:78
+msgid "The types paiement has been saved."
+msgstr ""
+
+#: /Controller/TypesPaiementsController.php:58
+#: /Controller/TypesPaiementsController.php:82
+msgid "The types paiement could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/TypesPaiementsController.php:99
+msgid "The types paiement has been deleted."
+msgstr ""
+
+#: /Controller/TypesPaiementsController.php:101
+msgid "The types paiement could not be deleted. Please, try again."
+msgstr ""
+
+#: /Controller/UsersController.php:112 /Controller/UsersController.php:137
+msgid "The user has been saved."
+msgstr ""
+
+#: /Controller/UsersController.php:116 /Controller/UsersController.php:141
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: /Controller/UsersController.php:159
+msgid "The user has been deleted."
+msgstr ""
+
+#: /Controller/UsersController.php:161
+msgid "The user could not be deleted. Please, try again."
+msgstr ""
+
+#: /Template/Applications/add.ctp:9 /Template/Applications/edit.ctp:9
+#: /Template/Applications/index.ctp:9 /Template/Applications/index.ctp:26
+#: /Template/Applications/view.ctp:9 /Template/Applications/view.ctp:55
+#: /Template/Applications/view.ctp:85 /Template/ApplicationsUsers/add.ctp:9
+#: /Template/ApplicationsUsers/edit.ctp:9
+#: /Template/ApplicationsUsers/index.ctp:9
+#: /Template/ApplicationsUsers/index.ctp:25
+#: /Template/ApplicationsUsers/view.ctp:9 /Template/Evaluations/add.ctp:9
+#: /Template/Evaluations/edit.ctp:9 /Template/Evaluations/index.ctp:9
+#: /Template/Evaluations/index.ctp:25 /Template/Evaluations/view.ctp:9
+#: /Template/Evaluations/view.ctp:53 /Template/EvaluationsPaiements/add.ctp:9
+#: /Template/EvaluationsPaiements/edit.ctp:9
+#: /Template/EvaluationsPaiements/index.ctp:9
+#: /Template/EvaluationsPaiements/index.ctp:25
+#: /Template/EvaluationsPaiements/view.ctp:9 /Template/Paiements/add.ctp:9
+#: /Template/Paiements/edit.ctp:9 /Template/Paiements/index.ctp:9
+#: /Template/Paiements/index.ctp:29 /Template/Paiements/view.ctp:9
+#: /Template/TypesPaiements/add.ctp:9 /Template/TypesPaiements/edit.ctp:9
+#: /Template/TypesPaiements/index.ctp:9 /Template/TypesPaiements/index.ctp:20
+#: /Template/TypesPaiements/view.ctp:9 /Template/Users/add.ctp:9
+#: /Template/Users/edit.ctp:9 /Template/Users/index.ctp:9
+#: /Template/Users/index.ctp:27 /Template/Users/view.ctp:9
+#: /Template/Users/view.ctp:62
+msgid "Actions"
+msgstr ""
+
+#: /Template/Applications/add.ctp:10 /Template/Applications/edit.ctp:16
+#: /Template/Applications/view.ctp:12 /Template/ApplicationsUsers/add.ctp:13
+#: /Template/ApplicationsUsers/edit.ctp:19
+#: /Template/ApplicationsUsers/index.ctp:13
+#: /Template/ApplicationsUsers/view.ctp:16 /Template/Paiements/add.ctp:11
+#: /Template/Paiements/edit.ctp:17 /Template/Paiements/index.ctp:11
+#: /Template/Paiements/view.ctp:14 /Template/Users/add.ctp:11
+#: /Template/Users/edit.ctp:17 /Template/Users/index.ctp:11
+#: /Template/Users/view.ctp:14
+msgid "List Applications"
+msgstr ""
+
+#: /Template/Applications/add.ctp:11 /Template/Applications/edit.ctp:17
+#: /Template/Applications/view.ctp:14 /Template/Evaluations/add.ctp:11
+#: /Template/Evaluations/edit.ctp:17 /Template/Evaluations/index.ctp:11
+#: /Template/Evaluations/view.ctp:14 /Template/EvaluationsPaiements/add.ctp:11
+#: /Template/EvaluationsPaiements/edit.ctp:17
+#: /Template/EvaluationsPaiements/index.ctp:11
+#: /Template/EvaluationsPaiements/view.ctp:14 /Template/Paiements/add.ctp:10
+#: /Template/Paiements/edit.ctp:16 /Template/Paiements/view.ctp:12
+msgid "List Paiements"
+msgstr ""
+
+#: /Template/Applications/add.ctp:12 /Template/Applications/edit.ctp:18
+#: /Template/Applications/view.ctp:15 /Template/Evaluations/add.ctp:12
+#: /Template/Evaluations/edit.ctp:18 /Template/Evaluations/index.ctp:12
+#: /Template/Evaluations/view.ctp:15 /Template/EvaluationsPaiements/add.ctp:12
+#: /Template/EvaluationsPaiements/edit.ctp:18
+#: /Template/EvaluationsPaiements/index.ctp:12
+#: /Template/EvaluationsPaiements/view.ctp:15 /Template/Paiements/index.ctp:10
+#: /Template/Paiements/view.ctp:13
+msgid "New Paiement"
+msgstr ""
+
+#: /Template/Applications/add.ctp:13 /Template/Applications/edit.ctp:19
+#: /Template/Applications/index.ctp:13 /Template/Applications/view.ctp:16
+#: /Template/ApplicationsUsers/add.ctp:11
+#: /Template/ApplicationsUsers/edit.ctp:17
+#: /Template/ApplicationsUsers/index.ctp:11
+#: /Template/ApplicationsUsers/view.ctp:14 /Template/Users/add.ctp:10
+#: /Template/Users/edit.ctp:16 /Template/Users/view.ctp:12
+msgid "List Users"
+msgstr ""
+
+#: /Template/Applications/add.ctp:14 /Template/Applications/edit.ctp:20
+#: /Template/Applications/view.ctp:17 /Template/ApplicationsUsers/add.ctp:12
+#: /Template/ApplicationsUsers/edit.ctp:18
+#: /Template/ApplicationsUsers/index.ctp:12
+#: /Template/ApplicationsUsers/view.ctp:15 /Template/Users/index.ctp:10
+#: /Template/Users/view.ctp:13
+msgid "New User"
+msgstr ""
+
+#: /Template/Applications/add.ctp:20
+msgid "Add Application"
+msgstr ""
+
+#: /Template/Applications/add.ctp:28 /Template/Applications/edit.ctp:35
+#: /Template/ApplicationsUsers/add.ctp:26
+#: /Template/ApplicationsUsers/edit.ctp:32 /Template/Evaluations/add.ctp:25
+#: /Template/Evaluations/edit.ctp:31 /Template/EvaluationsPaiements/add.ctp:26
+#: /Template/EvaluationsPaiements/edit.ctp:32 /Template/Paiements/add.ctp:28
+#: /Template/Paiements/edit.ctp:34 /Template/TypesPaiements/add.ctp:21
+#: /Template/TypesPaiements/edit.ctp:27 /Template/Users/add.ctp:27
+#: /Template/Users/edit.ctp:33 View/Helper/FormHelper.php:2029
+msgid "Submit"
+msgstr ""
+
+#: /Template/Applications/edit.ctp:11 /Template/Applications/index.ctp:41
+#: /Template/Applications/view.ctp:68 /Template/Applications/view.ctp:97
+#: /Template/ApplicationsUsers/edit.ctp:11
+#: /Template/ApplicationsUsers/index.ctp:37 /Template/Evaluations/edit.ctp:11
+#: /Template/Evaluations/index.ctp:39 /Template/Evaluations/view.ctp:66
+#: /Template/EvaluationsPaiements/edit.ctp:11
+#: /Template/EvaluationsPaiements/index.ctp:37 /Template/Paiements/edit.ctp:11
+#: /Template/Paiements/index.ctp:45 /Template/TypesPaiements/edit.ctp:11
+#: /Template/TypesPaiements/index.ctp:31 /Template/Users/edit.ctp:11
+#: /Template/Users/index.ctp:43 /Template/Users/view.ctp:76
+msgid "Delete"
+msgstr ""
+
+#: /Template/Applications/edit.ctp:13 /Template/Applications/index.ctp:41
+#: /Template/Applications/view.ctp:11 /Template/Applications/view.ctp:68
+#: /Template/Applications/view.ctp:97 /Template/ApplicationsUsers/edit.ctp:13
+#: /Template/ApplicationsUsers/index.ctp:37
+#: /Template/ApplicationsUsers/view.ctp:11 /Template/Evaluations/edit.ctp:13
+#: /Template/Evaluations/index.ctp:39 /Template/Evaluations/view.ctp:11
+#: /Template/Evaluations/view.ctp:66 /Template/EvaluationsPaiements/edit.ctp:13
+#: /Template/EvaluationsPaiements/index.ctp:37
+#: /Template/EvaluationsPaiements/view.ctp:11 /Template/Paiements/edit.ctp:13
+#: /Template/Paiements/index.ctp:45 /Template/Paiements/view.ctp:11
+#: /Template/TypesPaiements/edit.ctp:13 /Template/TypesPaiements/index.ctp:31
+#: /Template/TypesPaiements/view.ctp:11 /Template/Users/edit.ctp:13
+#: /Template/Users/index.ctp:43 /Template/Users/view.ctp:11
+#: /Template/Users/view.ctp:76
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: /Template/Applications/edit.ctp:26 /Template/Applications/view.ctp:10
+msgid "Edit Application"
+msgstr ""
+
+#: /Template/Applications/index.ctp:10 /Template/Applications/view.ctp:13
+#: /Template/ApplicationsUsers/add.ctp:14
+#: /Template/ApplicationsUsers/edit.ctp:20
+#: /Template/ApplicationsUsers/index.ctp:14
+#: /Template/ApplicationsUsers/view.ctp:17 /Template/Paiements/add.ctp:12
+#: /Template/Paiements/edit.ctp:18 /Template/Paiements/index.ctp:12
+#: /Template/Paiements/view.ctp:15 /Template/Users/add.ctp:12
+#: /Template/Users/edit.ctp:18 /Template/Users/index.ctp:12
+#: /Template/Users/view.ctp:15
+msgid "New Application"
+msgstr ""
+
+#: /Template/Applications/index.ctp:11
+msgid "Mes Paiements"
+msgstr ""
+
+#: /Template/Applications/index.ctp:12
+msgid "Acheter une application"
+msgstr ""
+
+#: /Template/Applications/index.ctp:14
+msgid "Creer un compte"
+msgstr ""
+
+#: /Template/Applications/index.ctp:18
+msgid "Applications"
+msgstr ""
+
+#: /Template/Applications/index.ctp:39 /Template/Applications/view.ctp:66
+#: /Template/Applications/view.ctp:95 /Template/ApplicationsUsers/index.ctp:35
+#: /Template/Evaluations/index.ctp:37 /Template/Evaluations/view.ctp:64
+#: /Template/EvaluationsPaiements/index.ctp:35 /Template/Paiements/index.ctp:43
+#: /Template/TypesPaiements/index.ctp:29 /Template/Users/index.ctp:41
+#: /Template/Users/view.ctp:74 View/Helper/PaginatorHelper.php:1270
+msgid "View"
+msgstr ""
+
+#: /Template/Applications/index.ctp:40 /Template/Applications/view.ctp:67
+#: /Template/Applications/view.ctp:96 /Template/ApplicationsUsers/index.ctp:36
+#: /Template/Evaluations/index.ctp:38 /Template/Evaluations/view.ctp:65
+#: /Template/EvaluationsPaiements/index.ctp:36 /Template/Paiements/index.ctp:44
+#: /Template/TypesPaiements/index.ctp:30 /Template/Users/index.ctp:42
+#: /Template/Users/view.ctp:75
+msgid "Edit"
+msgstr ""
+
+#: /Template/Applications/index.ctp:49 /Template/ApplicationsUsers/index.ctp:45
+#: /Template/Evaluations/index.ctp:47
+#: /Template/EvaluationsPaiements/index.ctp:45 /Template/Paiements/index.ctp:53
+#: /Template/TypesPaiements/index.ctp:39 /Template/Users/index.ctp:51
+msgid "first"
+msgstr ""
+
+#: /Template/Applications/index.ctp:50 /Template/ApplicationsUsers/index.ctp:46
+#: /Template/Evaluations/index.ctp:48
+#: /Template/EvaluationsPaiements/index.ctp:46 /Template/Paiements/index.ctp:54
+#: /Template/TypesPaiements/index.ctp:40 /Template/Users/index.ctp:52
+msgid "previous"
+msgstr ""
+
+#: /Template/Applications/index.ctp:52 /Template/ApplicationsUsers/index.ctp:48
+#: /Template/Evaluations/index.ctp:50
+#: /Template/EvaluationsPaiements/index.ctp:48 /Template/Paiements/index.ctp:56
+#: /Template/TypesPaiements/index.ctp:42 /Template/Users/index.ctp:54
+msgid "next"
+msgstr ""
+
+#: /Template/Applications/index.ctp:53 /Template/ApplicationsUsers/index.ctp:49
+#: /Template/Evaluations/index.ctp:51
+#: /Template/EvaluationsPaiements/index.ctp:49 /Template/Paiements/index.ctp:57
+#: /Template/TypesPaiements/index.ctp:43 /Template/Users/index.ctp:55
+msgid "last"
+msgstr ""
+
+#: /Template/Applications/index.ctp:55 /Template/ApplicationsUsers/index.ctp:51
+#: /Template/Evaluations/index.ctp:53
+#: /Template/EvaluationsPaiements/index.ctp:51 /Template/Paiements/index.ctp:59
+#: /Template/TypesPaiements/index.ctp:45 /Template/Users/index.ctp:57
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+
+#: /Template/Applications/view.ctp:11
+msgid "Delete Application"
+msgstr ""
+
+#: /Template/Applications/view.ctp:24 /Template/Users/view.ctp:58
+msgid "Prix"
+msgstr ""
+
+#: /Template/Applications/view.ctp:28 /Template/Users/view.ctp:57
+msgid "Description"
+msgstr ""
+
+#: /Template/Applications/view.ctp:32
+#: /Template/EvaluationsPaiements/view.ctp:28 /Template/Users/view.ctp:59
+msgid "Evaluation"
+msgstr ""
+
+#: /Template/Applications/view.ctp:36 /Template/Applications/view.ctp:53
+#: /Template/Applications/view.ctp:83 /Template/Evaluations/view.ctp:34
+#: /Template/Evaluations/view.ctp:51 /Template/Paiements/view.ctp:44
+#: /Template/Users/view.ctp:42 /Template/Users/view.ctp:60
+msgid "Created"
+msgstr ""
+
+#: /Template/Applications/view.ctp:40 /Template/Applications/view.ctp:54
+#: /Template/Applications/view.ctp:84 /Template/Evaluations/view.ctp:38
+#: /Template/Evaluations/view.ctp:52 /Template/Paiements/view.ctp:48
+#: /Template/Users/view.ctp:46 /Template/Users/view.ctp:61
+msgid "Modified"
+msgstr ""
+
+#: /Template/Applications/view.ctp:45
+msgid "Related Users"
+msgstr ""
+
+#: /Template/Applications/view.ctp:49 /Template/ApplicationsUsers/view.ctp:32
+#: /Template/Evaluations/view.ctp:26 /Template/Evaluations/view.ctp:47
+#: /Template/EvaluationsPaiements/view.ctp:32 /Template/Paiements/view.ctp:36
+#: /Template/TypesPaiements/view.ctp:24 /Template/Users/view.ctp:34
+#: /Template/Users/view.ctp:55
+msgid "Id"
+msgstr ""
+
+#: /Template/Applications/view.ctp:50 /Template/Users/view.ctp:22
+msgid "Username"
+msgstr ""
+
+#: /Template/Applications/view.ctp:51 /Template/Users/view.ctp:26
+msgid "Password"
+msgstr ""
+
+#: /Template/Applications/view.ctp:52 /Template/Users/view.ctp:30
+msgid "Email"
+msgstr ""
+
+#: /Template/Applications/view.ctp:76 /Template/Evaluations/view.ctp:43
+msgid "Related Paiements"
+msgstr ""
+
+#: /Template/Applications/view.ctp:80
+msgid "No. Facture"
+msgstr ""
+
+#: /Template/Applications/view.ctp:81 /Template/Evaluations/view.ctp:49
+msgid "Type Paiement Id"
+msgstr ""
+
+#: /Template/Applications/view.ctp:82 /Template/Evaluations/view.ctp:50
+#: /Template/Paiements/view.ctp:32
+msgid "Numero Carte"
+msgstr ""
+
+#: /Template/ApplicationsUsers/add.ctp:10
+#: /Template/ApplicationsUsers/edit.ctp:16
+#: /Template/ApplicationsUsers/view.ctp:12
+msgid "List Applications Users"
+msgstr ""
+
+#: /Template/ApplicationsUsers/add.ctp:20
+msgid "Add Applications User"
+msgstr ""
+
+#: /Template/ApplicationsUsers/edit.ctp:26
+#: /Template/ApplicationsUsers/view.ctp:10
+msgid "Edit Applications User"
+msgstr ""
+
+#: /Template/ApplicationsUsers/index.ctp:10
+#: /Template/ApplicationsUsers/view.ctp:13
+msgid "New Applications User"
+msgstr ""
+
+#: /Template/ApplicationsUsers/index.ctp:18
+msgid "Applications Users"
+msgstr ""
+
+#: /Template/ApplicationsUsers/view.ctp:11
+msgid "Delete Applications User"
+msgstr ""
+
+#: /Template/ApplicationsUsers/view.ctp:24
+msgid "User"
+msgstr ""
+
+#: /Template/ApplicationsUsers/view.ctp:28 /Template/Paiements/view.ctp:24
+msgid "Application"
+msgstr ""
+
+#: /Template/Evaluations/add.ctp:10 /Template/Evaluations/edit.ctp:16
+#: /Template/Evaluations/view.ctp:12 /Template/EvaluationsPaiements/add.ctp:13
+#: /Template/EvaluationsPaiements/edit.ctp:19
+#: /Template/EvaluationsPaiements/index.ctp:13
+#: /Template/EvaluationsPaiements/view.ctp:16
+msgid "List Evaluations"
+msgstr ""
+
+#: /Template/Evaluations/add.ctp:18
+msgid "Add Evaluation"
+msgstr ""
+
+#: /Template/Evaluations/edit.ctp:24 /Template/Evaluations/view.ctp:10
+msgid "Edit Evaluation"
+msgstr ""
+
+#: /Template/Evaluations/index.ctp:10 /Template/Evaluations/view.ctp:13
+#: /Template/EvaluationsPaiements/add.ctp:14
+#: /Template/EvaluationsPaiements/edit.ctp:20
+#: /Template/EvaluationsPaiements/index.ctp:14
+#: /Template/EvaluationsPaiements/view.ctp:17
+msgid "New Evaluation"
+msgstr ""
+
+#: /Template/Evaluations/index.ctp:16
+msgid "Evaluations"
+msgstr ""
+
+#: /Template/Evaluations/view.ctp:11
+msgid "Delete Evaluation"
+msgstr ""
+
+#: /Template/Evaluations/view.ctp:22
+msgid "Commentaires"
+msgstr ""
+
+#: /Template/Evaluations/view.ctp:30
+msgid "Note"
+msgstr ""
+
+#: /Template/Evaluations/view.ctp:48
+msgid "Application Id"
+msgstr ""
+
+#: /Template/EvaluationsPaiements/add.ctp:10
+#: /Template/EvaluationsPaiements/edit.ctp:16
+#: /Template/EvaluationsPaiements/view.ctp:12
+msgid "List Evaluations Paiements"
+msgstr ""
+
+#: /Template/EvaluationsPaiements/add.ctp:20
+msgid "Add Evaluations Paiement"
+msgstr ""
+
+#: /Template/EvaluationsPaiements/edit.ctp:26
+#: /Template/EvaluationsPaiements/view.ctp:10
+msgid "Edit Evaluations Paiement"
+msgstr ""
+
+#: /Template/EvaluationsPaiements/index.ctp:10
+#: /Template/EvaluationsPaiements/view.ctp:13
+msgid "New Evaluations Paiement"
+msgstr ""
+
+#: /Template/EvaluationsPaiements/index.ctp:18
+msgid "Evaluations Paiements"
+msgstr ""
+
+#: /Template/EvaluationsPaiements/view.ctp:11
+msgid "Delete Evaluations Paiement"
+msgstr ""
+
+#: /Template/EvaluationsPaiements/view.ctp:24
+msgid "Paiement"
+msgstr ""
+
+#: /Template/Layout/error.ctp:35 /Template/Error/error400.ctp:36
+#: /Template/Error/error500.ctp:41
+msgid "Error"
+msgstr ""
+
+#: /Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: /Template/Paiements/add.ctp:13 /Template/Paiements/edit.ctp:19
+#: /Template/Paiements/index.ctp:13 /Template/Paiements/view.ctp:16
+#: /Template/TypesPaiements/add.ctp:10 /Template/TypesPaiements/edit.ctp:16
+#: /Template/TypesPaiements/view.ctp:12
+msgid "List Types Paiements"
+msgstr ""
+
+#: /Template/Paiements/add.ctp:14 /Template/Paiements/edit.ctp:20
+#: /Template/Paiements/index.ctp:14 /Template/Paiements/view.ctp:17
+#: /Template/TypesPaiements/index.ctp:10 /Template/TypesPaiements/view.ctp:13
+msgid "New Types Paiement"
+msgstr ""
+
+#: /Template/Paiements/add.ctp:20
+msgid "Add Paiement"
+msgstr ""
+
+#: /Template/Paiements/edit.ctp:26 /Template/Paiements/view.ctp:10
+msgid "Edit Paiement"
+msgstr ""
+
+#: /Template/Paiements/index.ctp:18
+msgid "Paiements"
+msgstr ""
+
+#: /Template/Paiements/view.ctp:11
+msgid "Delete Paiement"
+msgstr ""
+
+#: /Template/Paiements/view.ctp:28
+msgid "Types Paiement"
+msgstr ""
+
+#: /Template/Paiements/view.ctp:40
+msgid "User Id"
+msgstr ""
+
+#: /Template/TypesPaiements/add.ctp:16
+msgid "Add Types Paiement"
+msgstr ""
+
+#: /Template/TypesPaiements/edit.ctp:22 /Template/TypesPaiements/view.ctp:10
+msgid "Edit Types Paiement"
+msgstr ""
+
+#: /Template/TypesPaiements/index.ctp:14
+msgid "Types Paiements"
+msgstr ""
+
+#: /Template/TypesPaiements/view.ctp:11
+msgid "Delete Types Paiement"
+msgstr ""
+
+#: /Template/TypesPaiements/view.ctp:20
+msgid "TypePaiement"
+msgstr ""
+
+#: /Template/Users/add.ctp:18
+msgid "Add User"
+msgstr ""
+
+#: /Template/Users/edit.ctp:24 /Template/Users/view.ctp:10
+msgid "Edit User"
+msgstr ""
+
+#: /Template/Users/index.ctp:16
+msgid "Users"
+msgstr ""
+
+#: /Template/Users/view.ctp:11
+msgid "Delete User"
+msgstr ""
+
+#: /Template/Users/view.ctp:38
+msgid "Permissions"
+msgstr ""
+
+#: /Template/Users/view.ctp:51
+msgid "Related Applications"
+msgstr ""
+
+#: /Template/Users/view.ctp:56
+msgid "Name"
+msgstr ""
+
+#: /Template/Error/error400.ctp:37
+msgid "The requested address {0} was not found on this server."
+msgstr ""
+
+#: /Template/Error/error500.ctp:39
+msgid "An Internal Error Has Occurred"
+msgstr ""
+
+#: Controller/Component/AuthComponent.php:500
+msgid "You are not authorized to access that location."
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:182
+#: Http/Middleware/CsrfProtectionMiddleware.php:227
+msgid "Missing CSRF token cookie"
+msgstr ""
+
+#: Controller/Component/CsrfComponent.php:186
+#: Http/Middleware/CsrfProtectionMiddleware.php:231
+msgid "CSRF token mismatch."
+msgstr ""
+
+#: Error/ExceptionRenderer.php:301
+msgid "Not Found"
+msgstr ""
+
+#: Error/ExceptionRenderer.php:303
+msgid "An Internal Error Has Occurred."
+msgstr ""
+
+#: Http/Response.php:2653
+msgid "The requested file contains `..` and will not be read."
+msgstr ""
+
+#: Http/Response.php:2674
+msgid "The requested file was not found"
+msgstr ""
+
+#: I18n/Number.php:90
+msgid "{0,number,#,###.##} KB"
+msgstr ""
+
+#: I18n/Number.php:92
+msgid "{0,number,#,###.##} MB"
+msgstr ""
+
+#: I18n/Number.php:94
+msgid "{0,number,#,###.##} GB"
+msgstr ""
+
+#: I18n/Number.php:96
+msgid "{0,number,#,###.##} TB"
+msgstr ""
+
+#: I18n/Number.php:88
+msgid "{0,number,integer} Byte"
+msgid_plural "{0,number,integer} Bytes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} from now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:80
+msgid "{0} ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} after"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:83
+msgid "{0} before"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:114
+msgid "just now"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:151
+msgid "about a second ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:152
+msgid "about a minute ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:153
+msgid "about an hour ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:154 I18n/RelativeTimeFormatter.php:332
+msgid "about a day ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:155 I18n/RelativeTimeFormatter.php:333
+msgid "about a week ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:156 I18n/RelativeTimeFormatter.php:334
+msgid "about a month ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:157 I18n/RelativeTimeFormatter.php:335
+msgid "about a year ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:168
+msgid "in about a second"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:169
+msgid "in about a minute"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:170
+msgid "in about an hour"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:171 I18n/RelativeTimeFormatter.php:346
+msgid "in about a day"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:172 I18n/RelativeTimeFormatter.php:347
+msgid "in about a week"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:173 I18n/RelativeTimeFormatter.php:348
+msgid "in about a month"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:174 I18n/RelativeTimeFormatter.php:349
+msgid "in about a year"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:304
+msgid "today"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:370
+msgid "%s ago"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:371
+msgid "on %s"
+msgstr ""
+
+#: I18n/RelativeTimeFormatter.php:47 I18n/RelativeTimeFormatter.php:126
+#: I18n/RelativeTimeFormatter.php:316
+msgid "{0} year"
+msgid_plural "{0} years"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:51 I18n/RelativeTimeFormatter.php:129
+#: I18n/RelativeTimeFormatter.php:319
+msgid "{0} month"
+msgid_plural "{0} months"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:57 I18n/RelativeTimeFormatter.php:132
+#: I18n/RelativeTimeFormatter.php:322
+msgid "{0} week"
+msgid_plural "{0} weeks"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:59 I18n/RelativeTimeFormatter.php:135
+#: I18n/RelativeTimeFormatter.php:325
+msgid "{0} day"
+msgid_plural "{0} days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:64 I18n/RelativeTimeFormatter.php:138
+msgid "{0} hour"
+msgid_plural "{0} hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:68 I18n/RelativeTimeFormatter.php:141
+msgid "{0} minute"
+msgid_plural "{0} minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: I18n/RelativeTimeFormatter.php:72 I18n/RelativeTimeFormatter.php:144
+msgid "{0} second"
+msgid_plural "{0} seconds"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ORM/RulesChecker.php:57
+msgid "This value is already in use"
+msgstr ""
+
+#: ORM/RulesChecker.php:104
+msgid "This value does not exist"
+msgstr ""
+
+#: ORM/RulesChecker.php:128
+msgid "The count does not match {0}{1}"
+msgstr ""
+
+#: Utility/Text.php:934
+msgid "and"
+msgstr ""
+
+#: Validation/Validator.php:2436 View/Form/ArrayContext.php:226
+msgid "This field is required"
+msgstr ""
+
+#: Validation/Validator.php:2458
+msgid "This field cannot be left empty"
+msgstr ""
+
+#: Validation/Validator.php:2608
+msgid "The provided value is invalid"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1108
+msgid "Edit {0}"
+msgstr ""
+
+#: View/Helper/FormHelper.php:1110
+msgid "New {0}"
+msgstr ""
+
+#: View/Helper/HtmlHelper.php:819
+msgid "Home"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:540
+msgid "January"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:541
+msgid "February"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:542
+msgid "March"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:543
+msgid "April"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:544
+msgid "May"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:545
+msgid "June"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:546
+msgid "July"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:547
+msgid "August"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:548
+msgid "September"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:549
+msgid "October"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:550
+msgid "November"
+msgstr ""
+
+#: View/Widget/DateTimeWidget.php:551
+msgid "December"
+msgstr ""

@@ -1,0 +1,50 @@
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "msg"
+msgstr "CakePHP Internationalization example."
+
+msgid "lang"
+msgstr "Language"
+
+msgid "langchg"
+msgstr "Change language"
+
+msgid "msgAfficherPaiements"
+msgstr "My Orders"
+
+msgid "msgAcheter"
+msgstr "Buy"
+
+msgid "traductionAnglais"
+msgstr "English"
+
+msgid "traductionFrancais"
+msgstr "French"
+
+msgid "traductionJaponais"
+msgstr "Japanese"
+
+msgid "msgDesc"
+msgstr "Mobile App Store"
+
+msgid "msgTitre"
+msgstr "Applications"
+
+msgid "msgActions"
+msgstr "ACTIONS"
+
+msgid "msgBienvenue"
+msgstr "Welcome"
+
+msgid "msglogin"
+msgstr "login"
+
+msgid "msgCreerCompte"
+msgstr "Sign up"
+
+msgid "msglogout"
+msgstr "logout"
+
+msgid "msgAPropos"
+msgstr "About"
