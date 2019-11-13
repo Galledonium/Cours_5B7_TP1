@@ -12,17 +12,6 @@ use App\Controller\AppController;
  */
 class ApplicationsController extends AppController
 {
-
-    public function initialize(){
-        parent::initialize();
-        
-        // Include the FlashComponent
-        $this->loadComponent('Flash');
-        
-        // Load Files model
-        $this->loadModel('Files');
- 
-    }
     /**
      * Index method
      *
@@ -30,16 +19,12 @@ class ApplicationsController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Files', 'Subcategories', 'Categories']
+        ];
         $applications = $this->paginate($this->Applications);
 
         $this->set(compact('applications'));
-    }
-
-    public function isAuthorized($userCourant)
-    {
-
-        return true;
-
     }
 
     /**
@@ -52,43 +37,10 @@ class ApplicationsController extends AppController
     public function view($id = null)
     {
         $application = $this->Applications->get($id, [
-            'contain' => ['Users', 'Paiements']
+            'contain' => ['Files', 'Subcategories', 'Categories', 'Users', 'Paiements']
         ]);
 
         $this->set('application', $application);
-        //Files
-
-        $uploadData = '';
-        if ($this->request->is('post')) {
-            if(!empty($this->request->data['file']['name'])){
-                $fileName = $this->request->data['file']['name'];
-                $uploadPath = 'uploads/files/';
-                $uploadFile = $uploadPath.$fileName;
-                if(move_uploaded_file($this->request->data['file']['tmp_name'],$uploadFile)){
-                    $uploadData = $this->Files->newEntity();
-                    $uploadData->name = $fileName;
-                    $uploadData->path = $uploadPath;
-                    $uploadData->created = date("Y-m-d H:i:s");
-                    $uploadData->modified = date("Y-m-d H:i:s");
-                    if ($this->Files->save($uploadData)) {
-                        $this->Flash->success(__('File has been uploaded and inserted successfully.'));
-                    }else{
-                        $this->Flash->error(__('Unable to upload file, please try again.'));
-                    }
-                }else{
-                    $this->Flash->error(__('Unable to upload file, please try again.'));
-                }
-            }else{
-                $this->Flash->error(__('Please choose a file to upload.'));
-            }
-            
-        }
-        $this->set('uploadData', $uploadData);
-        
-        $files = $this->Files->find('all', ['order' => ['Files.created' => 'DESC']]);
-        $filesRowNum = $files->count();
-        $this->set('files',$files);
-        $this->set('filesRowNum',$filesRowNum);
     }
 
     /**
@@ -108,8 +60,11 @@ class ApplicationsController extends AppController
             }
             $this->Flash->error(__('The application could not be saved. Please, try again.'));
         }
+        $files = $this->Applications->Files->find('list', ['limit' => 200]);
+        $subcategories = $this->Applications->Subcategories->find('list', ['limit' => 200]);
+        $categories = $this->Applications->Categories->find('list', ['limit' => 200]);
         $users = $this->Applications->Users->find('list', ['limit' => 200]);
-        $this->set(compact('application', 'users'));
+        $this->set(compact('application', 'files', 'subcategories', 'categories', 'users'));
     }
 
     /**
@@ -133,8 +88,11 @@ class ApplicationsController extends AppController
             }
             $this->Flash->error(__('The application could not be saved. Please, try again.'));
         }
+        $files = $this->Applications->Files->find('list', ['limit' => 200]);
+        $subcategories = $this->Applications->Subcategories->find('list', ['limit' => 200]);
+        $categories = $this->Applications->Categories->find('list', ['limit' => 200]);
         $users = $this->Applications->Users->find('list', ['limit' => 200]);
-        $this->set(compact('application', 'users'));
+        $this->set(compact('application', 'files', 'subcategories', 'categories', 'users'));
     }
 
     /**

@@ -11,9 +11,15 @@ use Cake\ORM\Entity;
  * @property string|null $description
  * @property float $prix
  * @property int|null $evaluation
+ * @property int|null $file_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
+ * @property int|null $subcategorie_id
+ * @property int|null $categorie_id
  *
+ * @property \App\Model\Entity\File $file
+ * @property \App\Model\Entity\Subcategory $subcategory
+ * @property \App\Model\Entity\Category $category
  * @property \App\Model\Entity\Paiement[] $paiements
  * @property \App\Model\Entity\User[] $users
  */
@@ -33,8 +39,14 @@ class Application extends Entity
         'description' => true,
         'prix' => true,
         'evaluation' => true,
+        'file_id' => true,
         'created' => true,
         'modified' => true,
+        'subcategorie_id' => true,
+        'categorie_id' => true,
+        'file' => true,
+        'subcategory' => true,
+        'category' => true,
         'paiements' => true,
         'users' => true
     ];

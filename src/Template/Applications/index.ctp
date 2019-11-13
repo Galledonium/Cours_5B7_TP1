@@ -6,45 +6,51 @@
 ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
-        <li class="heading"><?= __('msgActions') ?></li>
-
-        <?php $user = $this->request->getSession()->read('Auth.User') ?>
-        
-        <li><?= $this->Html->link(__('msgAfficherPaiements'), ['controller' => 'Paiements', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('msgAcheter'), ['controller' => 'Paiements', 'action' => 'add']) ?></li>
-
-        <?php
-            if($user['permissions'] === 2){
-
-                echo '<li>' . $this->Html->link(__('New Application'), ['action' => 'add']) . '</li>';
-                echo '<li>' . $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) . '</li>';
-
-            }
-
-        ?>
+        <li class="heading"><?= __('Actions') ?></li>
+        <li><?= $this->Html->link(__('New Application'), ['action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Files'), ['controller' => 'Files', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New File'), ['controller' => 'Files', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Subcategories'), ['controller' => 'Subcategories', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Subcategory'), ['controller' => 'Subcategories', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Paiements'), ['controller' => 'Paiements', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New Paiement'), ['controller' => 'Paiements', 'action' => 'add']) ?></li>
+        <li><?= $this->Html->link(__('List Users'), ['controller' => 'Users', 'action' => 'index']) ?></li>
+        <li><?= $this->Html->link(__('New User'), ['controller' => 'Users', 'action' => 'add']) ?></li>
     </ul>
 </nav>
 <div class="applications index large-9 medium-8 columns content">
-    <h3><?= __('msgTitre') ?></h3>
+    <h3><?= __('Applications') ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
+                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('description') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('prix') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('evaluation') ?></th>
-                <th scope="col" class="actions"><?= __('msgActions') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('file_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('subcategorie_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('categorie_id') ?></th>
+                <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($applications as $application): ?>
             <tr>
+                <td><?= $this->Number->format($application->id) ?></td>
                 <td><?= h($application->name) ?></td>
-                <td><?= h($application->description != '' ? $application->description : 'N/A') ?></td>
+                <td><?= h($application->description) ?></td>
                 <td><?= $this->Number->format($application->prix) ?></td>
                 <td><?= $this->Number->format($application->evaluation) ?></td>
-                <!-- <td><?= h($application->created) ?></td>
-                <td><?= h($application->modified) ?></td> -->
+                <td><?= $application->has('file') ? $this->Html->link($application->file->name, ['controller' => 'Files', 'action' => 'view', $application->file->id]) : '' ?></td>
+                <td><?= h($application->created) ?></td>
+                <td><?= h($application->modified) ?></td>
+                <td><?= $application->has('subcategory') ? $this->Html->link($application->subcategory->name, ['controller' => 'Subcategories', 'action' => 'view', $application->subcategory->id]) : '' ?></td>
+                <td><?= $application->has('category') ? $this->Html->link($application->category->name, ['controller' => 'Categories', 'action' => 'view', $application->category->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $application->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $application->id]) ?>

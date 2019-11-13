@@ -21,6 +21,9 @@ class ApplicationsControllerTest extends TestCase
      */
     public $fixtures = [
         'app.Applications',
+        'app.Files',
+        'app.Subcategories',
+        'app.Categories',
         'app.Paiements',
         'app.Users',
         'app.ApplicationsUsers'
