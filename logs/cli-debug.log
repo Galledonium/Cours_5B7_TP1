@@ -71,6 +71,7 @@ Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 162
 
 
 
+<<<<<<< HEAD
 2019-11-13 15:52:27 Notice: Deprecated (16384): ServerRequest::session() is deprecated. Use getSession() instead. The setter part will be removed. - C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\src\Controller\AppController.php, line: 75
  You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\functions.php, line 311]
 Trace:
@@ -282,3 +283,5 @@ Cake\Console\CommandRunner::run() - CORE\src\Console\CommandRunner.php, line 162
 
 
 
+=======
+>>>>>>> parent of 5cc0bc1... Avant Cake Bake Applications
