@@ -10109,3 +10109,355 @@ Request URL: /applications/edit/2
 Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
 
 
+2019-11-14 16:17:02 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:17:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:17:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:17:03 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:17:58 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:17:58 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:17:58 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:17:58 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:01 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:02 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:18 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:18 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:19 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:44 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:44 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:18:45 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:19:12 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:19:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:19:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:19:12 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-14 16:19:32 Error: [Error] Call to a member function get() on array
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\ApplicationsController->edit('2')
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+
+
+2019-11-14 16:27:26 Error: [Error] Call to a member function toArray() on string
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\ApplicationsController->edit('2')
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /applications/edit/2
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+
+

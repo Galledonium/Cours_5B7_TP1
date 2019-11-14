@@ -43,6 +43,16 @@ class SubcategoriesController extends AppController
         $this->set('subcategory', $subcategory);
     }
 
+    public function getByCategory() {
+        $category_id = $this->request->query('category_id');
+
+        $subcategories = $this->Subcategories->find('all', [
+            'conditions' => ['Subcategories.category_id' => $category_id],
+        ]);
+        $this->set('subcategories', $subcategories);
+        $this->set('_serialize', ['subcategories']);
+    }
+
     /**
      * Add method
      *

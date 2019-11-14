@@ -102,11 +102,11 @@ class ApplicationsController extends AppController
         reset($categories);
         $category_id = key($categories);
 
-        debug(key($categories));
+        debug($category_id);
 
         // Bâtir la liste des sous-catégories reliées à cette catégorie
         $subcategories = $this->Applications->Subcategories->find('list', [
-            'conditions' => ['Subcategories.category_id' => 2],
+            'conditions' => ['Subcategories.category_id' => $category_id],
         ]);
         $users = $this->Applications->Users->find('list', ['limit' => 200]);
         $this->set(compact('application', 'files', 'subcategories', 'categories', 'users'));

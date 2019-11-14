@@ -1,9 +1,20 @@
 <?php
+$urlToLinkedListFilter = $this->Url->build([
+    "controller" => "Subcategories",
+    "action" => "getByCategory",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToLinkedListFilter = "' . $urlToLinkedListFilter . '";', ['block' => true]);
+echo $this->Html->script('Applications/edit', ['block' => 'scriptBottom']);
+?>
+
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Application $application
  */
 ?>
+
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -35,10 +46,8 @@
             echo $this->Form->control('description');
             echo $this->Form->control('prix');
             echo $this->Form->control('evaluation');
-            echo $this->Form->control('file_id', ['options' => $files, 'empty' => true]);
-            echo $this->Form->control('categorie_id', ['options' => $categories, 'empty' => true]);
-            echo $this->Form->control('subcategorie_id', ['options' => $subcategories, 'empty' => true]);
-            echo $this->Form->control('users._ids', ['options' => $users]);
+            echo $this->Form->control('Categorie_id', ['options' => $categories]);
+            echo $this->Form->control('subcategorie_id', ['options' => $subcategories]);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
