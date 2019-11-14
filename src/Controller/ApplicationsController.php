@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use App\Model\Entity\ListeApplication;
 
 /**
  * Applications Controller
@@ -47,6 +48,41 @@ class ApplicationsController extends AppController
         ]);
 
         $this->set('application', $application);
+    }
+
+    /**
+     * findApps method
+     * for use with JQuery-UI Autocomplete
+     *
+     * @return JSon query result
+     */
+    public function findApps() {
+
+        if ($this->request->is('ajax')) {
+
+            $this->autoRender = false;
+            $name = $this->request->query['term'];
+
+            $this->loadModel('ListeApplications');
+
+            $results = $this->ListeApplications->find('all', array(
+                'conditions' => array('ListeApplications.nom LIKE ' => '%' . $name . '%')
+            ));
+
+            $resultArr = array();
+            foreach ($results as $result) {
+                $resultArr[] = array('label' => $result['nom'], 'value' => $result['nom']);
+            }
+
+            debug($results);
+            die();
+
+            echo json_encode($resultArr);
+        }
+    }
+
+    public function autocompletedemo() {
+        
     }
 
     /**

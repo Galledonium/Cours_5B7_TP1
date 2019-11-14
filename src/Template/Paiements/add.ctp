@@ -1,4 +1,14 @@
 <?php
+$urlToApplicationsAutocompletedemoJson = $this->Url->build([
+    "controller" => "Applications",
+    "action" => "findApps",
+    "_ext" => "json"
+        ]);
+echo $this->Html->scriptBlock('var urlToAutocompleteAction = "' . $urlToApplicationsAutocompletedemoJson . '";', ['block' => true]);
+echo $this->Html->script('Paiements/autocompletedemo', ['block' => 'scriptBottom']);
+?>
+
+<?php
 /**
  * @var \App\View\AppView $this
  * @var \App\Model\Entity\Paiement $paiement
@@ -21,7 +31,7 @@
         <?php
             $user = $this->request->getSession()->read('Auth.User');
         
-            echo $this->Form->control('application_id', ['options' => $applications]);
+            echo $this->Form->input('application', ['id' => 'autocomplete']);
             echo $this->Form->control('type_paiement_id', ['options' => $typesPaiements]);
             echo $this->Form->control('user_id', ['options' => $users, 'type' => 'hidden', 'default' => $user['id']]);
             echo $this->Form->control('numero_carte');
