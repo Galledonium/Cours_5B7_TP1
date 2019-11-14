@@ -33,8 +33,8 @@
                 <th scope="col"><?= $this->Paginator->sort('file_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('created') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('subcategorie_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('categorie_id') ?></th>
+                <th scope="col"><?= $this->Paginator->sort('subcategorie_id') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -49,8 +49,8 @@
                 <td><?= $application->has('file') ? $this->Html->link($application->file->name, ['controller' => 'Files', 'action' => 'view', $application->file->id]) : '' ?></td>
                 <td><?= h($application->created) ?></td>
                 <td><?= h($application->modified) ?></td>
-                <td><?= $application->has('subcategory') ? $this->Html->link($application->subcategory->name, ['controller' => 'Subcategories', 'action' => 'view', $application->subcategory->id]) : '' ?></td>
                 <td><?= $application->has('category') ? $this->Html->link($application->category->name, ['controller' => 'Categories', 'action' => 'view', $application->category->id]) : '' ?></td>
+                <td><?= $application->has('subcategory') ? $this->Html->link($application->subcategory->name, ['controller' => 'Subcategories', 'action' => 'view', $application->subcategory->id]) : '' ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $application->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $application->id]) ?>

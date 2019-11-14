@@ -27,6 +27,12 @@ class ApplicationsController extends AppController
         $this->set(compact('applications'));
     }
 
+    public function isAuthorized($userCourant)
+    {
+        return true;
+
+    }
+
     /**
      * View method
      *
@@ -89,8 +95,19 @@ class ApplicationsController extends AppController
             $this->Flash->error(__('The application could not be saved. Please, try again.'));
         }
         $files = $this->Applications->Files->find('list', ['limit' => 200]);
-        $subcategories = $this->Applications->Subcategories->find('list', ['limit' => 200]);
+        
         $categories = $this->Applications->Categories->find('list', ['limit' => 200]);
+
+        $categories = $categories->toArray();
+        reset($categories);
+        $category_id = key($categories);
+
+        debug(key($categories));
+
+        // Bâtir la liste des sous-catégories reliées à cette catégorie
+        $subcategories = $this->Applications->Subcategories->find('list', [
+            'conditions' => ['Subcategories.category_id' => 2],
+        ]);
         $users = $this->Applications->Users->find('list', ['limit' => 200]);
         $this->set(compact('application', 'files', 'subcategories', 'categories', 'users'));
     }

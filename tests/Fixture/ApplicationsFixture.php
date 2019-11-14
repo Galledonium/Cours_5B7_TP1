@@ -23,8 +23,8 @@ class ApplicationsFixture extends TestFixture
         'file_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
         'created' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'precision' => null, 'comment' => null],
         'modified' => ['type' => 'datetime', 'length' => null, 'null' => false, 'default' => null, 'precision' => null, 'comment' => null],
-        'subcategorie_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
         'categorie_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
+        'subcategorie_id' => ['type' => 'integer', 'length' => null, 'unsigned' => false, 'null' => true, 'default' => null, 'precision' => null, 'comment' => null, 'autoIncrement' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
             'sqlite_autoindex_applications_1' => ['type' => 'unique', 'columns' => ['id'], 'length' => []],
@@ -48,10 +48,10 @@ class ApplicationsFixture extends TestFixture
                 'prix' => 1.5,
                 'evaluation' => 1,
                 'file_id' => 1,
-                'created' => '2019-11-13 23:50:11',
-                'modified' => '2019-11-13 23:50:11',
-                'subcategorie_id' => 1,
-                'categorie_id' => 1
+                'created' => '2019-11-14 00:07:52',
+                'modified' => '2019-11-14 00:07:52',
+                'categorie_id' => 1,
+                'subcategorie_id' => 1
             ],
         ];
         parent::init();

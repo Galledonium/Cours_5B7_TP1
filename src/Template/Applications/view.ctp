@@ -39,12 +39,12 @@
             <td><?= $application->has('file') ? $this->Html->link($application->file->name, ['controller' => 'Files', 'action' => 'view', $application->file->id]) : '' ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Subcategory') ?></th>
-            <td><?= $application->has('subcategory') ? $this->Html->link($application->subcategory->name, ['controller' => 'Subcategories', 'action' => 'view', $application->subcategory->id]) : '' ?></td>
-        </tr>
-        <tr>
             <th scope="row"><?= __('Category') ?></th>
             <td><?= $application->has('category') ? $this->Html->link($application->category->name, ['controller' => 'Categories', 'action' => 'view', $application->category->id]) : '' ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Subcategory') ?></th>
+            <td><?= $application->has('subcategory') ? $this->Html->link($application->subcategory->name, ['controller' => 'Subcategories', 'action' => 'view', $application->subcategory->id]) : '' ?></td>
         </tr>
         <tr>
             <th scope="row"><?= __('Id') ?></th>

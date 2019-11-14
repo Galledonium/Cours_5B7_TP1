@@ -30,8 +30,8 @@
             echo $this->Form->control('prix');
             echo $this->Form->control('evaluation');
             echo $this->Form->control('file_id', ['options' => $files, 'empty' => true]);
-            echo $this->Form->control('subcategorie_id', ['options' => $subcategories, 'empty' => true]);
             echo $this->Form->control('categorie_id', ['options' => $categories, 'empty' => true]);
+            echo $this->Form->control('subcategorie_id', ['options' => $subcategories, 'empty' => true]);
             echo $this->Form->control('users._ids', ['options' => $users]);
         ?>
     </fieldset>

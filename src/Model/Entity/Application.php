@@ -14,8 +14,8 @@ use Cake\ORM\Entity;
  * @property int|null $file_id
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
- * @property int|null $subcategorie_id
  * @property int|null $categorie_id
+ * @property int|null $subcategorie_id
  *
  * @property \App\Model\Entity\File $file
  * @property \App\Model\Entity\Subcategory $subcategory
@@ -42,8 +42,8 @@ class Application extends Entity
         'file_id' => true,
         'created' => true,
         'modified' => true,
-        'subcategorie_id' => true,
         'categorie_id' => true,
+        'subcategorie_id' => true,
         'file' => true,
         'subcategory' => true,
         'category' => true,
