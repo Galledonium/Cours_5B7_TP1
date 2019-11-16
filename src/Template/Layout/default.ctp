@@ -139,5 +139,8 @@ $cakeDescription = __('msgDesc');
     </div>
     <footer>
     </footer>
+    <?= $this->fetch('scriptLibraries') ?>    
+    <?= $this->fetch('script'); ?>
+    <?= $this->fetch('scriptBottom') ?>
 </body>
 </html>

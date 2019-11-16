@@ -119,12 +119,6 @@ class PaiementsController extends AppController
             $this->Flash->error(__('The paiement could not be saved. Please, try again.'));
         }
 
-        $this->loadModel('ListeApplications');
-
-        $results = (new ApplicationsController())->findApps();
-        debug($results);
-
-        //$applications = $this->ListeApplications->find('list', ['limit' => 200, 'valueField' => 'nom']);
         $typesPaiements = $this->Paiements->TypesPaiements->find('list', ['limit' => 200, 'valueField' => 'typePaiement']);
         $users = $this->Paiements->Users->find('list', ['limit' => 200])->where(['id' => $user['id']]);
 
@@ -132,6 +126,8 @@ class PaiementsController extends AppController
         // die();
         
         $this->set(compact('paiement', 'applications', 'typesPaiements', 'users'));
+
+        //FIXME FAILED NOT_NULL CONSTRAINT ON PAIEMENT.id
     }
 
     /**

@@ -10461,3 +10461,693 @@ Request URL: /applications/edit/2
 Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
 
 
+2019-11-15 22:15:21 Error: [Cake\View\Exception\MissingTemplateException] Template file "Applications\json\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Applications\\json\\add.ctp',
+)
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\SerializedView.php(104): Cake\View\View->_getViewFileName('Applications\\js...')
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\JsonView.php(107): Cake\View\SerializedView->render(NULL, NULL)
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\JsonView->render(NULL, NULL)
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /applications/add.json?term=z
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-15 22:15:21 Error: [Cake\View\Exception\MissingTemplateException] Template file "Applications\json\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Applications\\json\\add.ctp',
+)
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\SerializedView.php(104): Cake\View\View->_getViewFileName('Applications\\js...')
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\JsonView.php(107): Cake\View\SerializedView->render(NULL, NULL)
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\JsonView->render(NULL, NULL)
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /applications/add.json?term=za
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-15 22:15:22 Error: [Cake\View\Exception\MissingTemplateException] Template file "Applications\json\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Applications\\json\\add.ctp',
+)
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\SerializedView.php(104): Cake\View\View->_getViewFileName('Applications\\js...')
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\JsonView.php(107): Cake\View\SerializedView->render(NULL, NULL)
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\JsonView->render(NULL, NULL)
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /applications/add.json?term=zaa
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-15 22:15:23 Error: [Cake\View\Exception\MissingTemplateException] Template file "Applications\json\add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Applications\\json\\add.ctp',
+)
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\SerializedView.php(104): Cake\View\View->_getViewFileName('Applications\\js...')
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\View\JsonView.php(107): Cake\View\SerializedView->render(NULL, NULL)
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(796): Cake\View\JsonView->render(NULL, NULL)
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(126): Cake\Controller\Controller->render()
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#22 {main}
+Request URL: /applications/add.json?term=zaasf
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-15 22:23:07 Error: [Error] Call to a member function find() on boolean
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\ApplicationsController->findApps()
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /applications/find-apps.json?term=m
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-15 22:23:07 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/find-apps.json?term=m
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:23:07 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/find-apps.json?term=m
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:23:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/find-apps.json?term=m
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:23:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/find-apps.json?term=m
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:23:10 Error: [Error] Call to a member function find() on boolean
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\ApplicationsController->findApps()
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-15 22:23:10 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:23:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:23:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:23:11 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:28:50 Error: [Error] Call to a member function find() on boolean
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\ApplicationsController->findApps()
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-15 22:28:51 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:28:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:28:51 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:28:52 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:29:07 Error: [Error] Call to a member function find() on boolean
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\ApplicationsController->findApps()
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /applications/find-apps.json?term=m
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-15 22:29:08 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/find-apps.json?term=m
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:29:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/find-apps.json?term=m
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:29:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/find-apps.json?term=m
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:29:08 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/find-apps.json?term=m
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:29:09 Error: [Error] Call to a member function find() on boolean
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\ApplicationsController->findApps()
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-15 22:29:09 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:29:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:29:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:29:10 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/find-apps.json?term=M
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-15 22:31:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: paiements.id
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): Cake\Database\Statement\SqliteStatement->execute(NULL)
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(App\Model\Entity\Paiement), Array)
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Paiement), Object(ArrayObject))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\src\Controller\PaiementsController.php(114): Cake\ORM\Table->save(Object(App\Model\Entity\Paiement))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PaiementsController->add()
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PaiementsController))
+#20 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#37 {main}
+Request URL: /paiements/add
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-15 22:32:10 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: paiements.id
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): PDOStatement->execute(NULL)
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\BufferedStatement.php(146): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(173): Cake\Database\Statement\SqliteStatement->execute(NULL)
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(334): Cake\Database\Log\LoggingStatement->execute()
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Core\Retry\CommandRetry.php(68): Cake\Database\Connection->Cake\Database\{closure}()
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(337): Cake\Core\Retry\CommandRetry->run(Object(Closure))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Query.php(219): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2129): Cake\Database\Query->execute()
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(2021): Cake\ORM\Table->_insert(Object(App\Model\Entity\Paiement), Array)
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1934): Cake\ORM\Table->_processSave(Object(App\Model\Entity\Paiement), Object(ArrayObject))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1639): Cake\ORM\Table->Cake\ORM\{closure}()
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Database\Connection.php(738): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1640): Cake\Database\Connection->transactional(Object(Closure))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\ORM\Table.php(1935): Cake\ORM\Table->_executeTransaction(Object(Closure), true)
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\src\Controller\PaiementsController.php(114): Cake\ORM\Table->save(Object(App\Model\Entity\Paiement))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\PaiementsController->add()
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\PaiementsController))
+#20 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#25 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#26 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#28 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#29 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#30 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#31 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#32 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#33 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#34 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#35 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#36 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#37 {main}
+Request URL: /paiements/add
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/paiements/add
+
+
+2019-11-16 00:42:29 Error: [Error] Call to a member function find() on boolean
+#0 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Controller\Controller.php(610): App\Controller\ApplicationsController->edit('7')
+#1 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#2 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\ApplicationsController))
+#3 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\BaseApplication.php(235): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#4 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#5 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Middleware\CsrfProtectionMiddleware.php(123): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\Middleware\CsrfProtectionMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(168): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(96): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\Server.php(98): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\webroot\index.php(40): Cake\Http\Server->run()
+#20 {main}
+Request URL: /applications/edit/7
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+
+
+2019-11-16 00:42:29 Warning: Warning (512): Unable to emit headers. Headers sent in file=C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php line=856 in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 51]
+Request URL: /applications/edit/7
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 51
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-16 00:42:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 152]
+Request URL: /applications/edit/7
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitStatusLine() - CORE\src\Http\ResponseEmitter.php, line 152
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 57
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-16 00:42:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/7
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+
+2019-11-16 00:42:30 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Error\Debugger.php:856) in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\vendor\cakephp\cakephp\src\Http\ResponseEmitter.php, line 182]
+Request URL: /applications/edit/7
+Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 159
+Cake\Core\BasePlugin::{closure}() - ROOT\vendor\cakephp\debug_kit\config\bootstrap.php, line 42
+header - [internal], line ??
+Cake\Http\ResponseEmitter::emitHeaders() - CORE\src\Http\ResponseEmitter.php, line 182
+Cake\Http\ResponseEmitter::emit() - CORE\src\Http\ResponseEmitter.php, line 58
+Cake\Http\Server::emit() - CORE\src\Http\Server.php, line 141
+[main] - ROOT\webroot\index.php, line 40
+
+
+

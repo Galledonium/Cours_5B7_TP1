@@ -27,6 +27,11 @@ class SubcategoriesController extends AppController
         $this->set(compact('subcategories'));
     }
 
+    public function isAuthorized($user) {
+        // All actions are allowed to logged in users for subcategories.
+        return true;
+    }
+
     /**
      * View method
      *

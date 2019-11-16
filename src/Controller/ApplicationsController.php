@@ -63,19 +63,14 @@ class ApplicationsController extends AppController
             $this->autoRender = false;
             $name = $this->request->query['term'];
 
-            $this->loadModel('ListeApplications');
-
-            $results = $this->ListeApplications->find('all', array(
-                'conditions' => array('ListeApplications.nom LIKE ' => '%' . $name . '%')
+            $results = $this->Applications->find('all', array(
+                'conditions' => array('Applications.name LIKE ' => '%' . $name . '%')
             ));
 
             $resultArr = array();
             foreach ($results as $result) {
-                $resultArr[] = array('label' => $result['nom'], 'value' => $result['nom']);
+                $resultArr[] = array('label' => $result['name'], 'value' => $result['name']);
             }
-
-            debug($results);
-            die();
 
             echo json_encode($resultArr);
         }
@@ -134,11 +129,7 @@ class ApplicationsController extends AppController
         
         $categories = $this->Applications->Categories->find('list', ['limit' => 200]);
 
-        $categories = $categories->toArray();
-        reset($categories);
-        $category_id = key($categories);
-
-        debug($category_id);
+        $category_id = $application->categorie_id;
 
         // Bâtir la liste des sous-catégories reliées à cette catégorie
         $subcategories = $this->Applications->Subcategories->find('list', [

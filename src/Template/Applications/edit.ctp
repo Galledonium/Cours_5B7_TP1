@@ -46,7 +46,7 @@ echo $this->Html->script('Applications/edit', ['block' => 'scriptBottom']);
             echo $this->Form->control('description');
             echo $this->Form->control('prix');
             echo $this->Form->control('evaluation');
-            echo $this->Form->control('Categorie_id', ['options' => $categories]);
+            echo $this->Form->control('Category_id', ['options' => $categories]);
             echo $this->Form->control('subcategorie_id', ['options' => $subcategories]);
         ?>
     </fieldset>
