@@ -22,7 +22,6 @@ use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
 use Cake\Routing\Route\DashedRoute;
 
-Router::extensions(["json", "xml"]);
 
 /**
  * The default class to use for all routes
@@ -47,11 +46,18 @@ Router::extensions(["json", "xml"]);
  */
 Router::defaultRouteClass(DashedRoute::class);
 
+Router::prefix('api', function ($routes) {
+    $routes->extensions(['json', 'xml']);
+    $routes->resources('Subcategories');
+});
+
 Router::scope('/', function (RouteBuilder $routes) {
+
     // Register scoped middleware for in scopes.
     $routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([
         'httpOnly' => true
     ]));
+
 
     /**
      * Apply a middleware to the current route scope.

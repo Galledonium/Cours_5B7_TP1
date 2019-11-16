@@ -12,115 +12,127 @@ use App\Controller\AppController;
  */
 class SubcategoriesController extends AppController
 {
-    /**
-     * Index method
-     *
-     * @return \Cake\Http\Response|null
-     */
-    public function index()
-    {
-        $this->paginate = [
-            'contain' => ['Categories']
-        ];
-        $subcategories = $this->paginate($this->Subcategories);
 
-        $this->set(compact('subcategories'));
-    }
+    public $paginate = [
+        'page' => 1,
+        'limit' => 10,
+        'maxLimit' => 100,
+        'fields' => [
+            'id', 'category_id', 'name'
+        ],
+        'sortWhitelist' => [
+            'id', 'category_id', 'name'
+        ]
+    ];
+    // /**
+    //  * Index method
+    //  *
+    //  * @return \Cake\Http\Response|null
+    //  */
+    // public function index()
+    // {
+    //     $this->paginate = [
+    //         'contain' => ['Categories']
+    //     ];
+    //     $subcategories = $this->paginate($this->Subcategories);
 
-    public function isAuthorized($user) {
-        // All actions are allowed to logged in users for subcategories.
-        return true;
-    }
+    //     $this->set(compact('subcategories'));
+    // }
 
-    /**
-     * View method
-     *
-     * @param string|null $id Subcategory id.
-     * @return \Cake\Http\Response|null
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
-    public function view($id = null)
-    {
-        $subcategory = $this->Subcategories->get($id, [
-            'contain' => ['Categories']
-        ]);
+    // public function isAuthorized($user) {
+    //     // All actions are allowed to logged in users for subcategories.
+    //     return true;
+    // }
 
-        $this->set('subcategory', $subcategory);
-    }
+    // /**
+    //  * View method
+    //  *
+    //  * @param string|null $id Subcategory id.
+    //  * @return \Cake\Http\Response|null
+    //  * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+    //  */
+    // public function view($id = null)
+    // {
+    //     $subcategory = $this->Subcategories->get($id, [
+    //         'contain' => ['Categories']
+    //     ]);
 
-    public function getByCategory() {
-        $category_id = $this->request->query('category_id');
+    //     $this->set('subcategory', $subcategory);
+    // }
 
-        $subcategories = $this->Subcategories->find('all', [
-            'conditions' => ['Subcategories.category_id' => $category_id],
-        ]);
-        $this->set('subcategories', $subcategories);
-        $this->set('_serialize', ['subcategories']);
-    }
+    // public function getByCategory() {
+    //     $category_id = $this->request->query('category_id');
 
-    /**
-     * Add method
-     *
-     * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
-     */
-    public function add()
-    {
-        $subcategory = $this->Subcategories->newEntity();
-        if ($this->request->is('post')) {
-            $subcategory = $this->Subcategories->patchEntity($subcategory, $this->request->getData());
-            if ($this->Subcategories->save($subcategory)) {
-                $this->Flash->success(__('The subcategory has been saved.'));
+    //     $subcategories = $this->Subcategories->find('all', [
+    //         'conditions' => ['Subcategories.category_id' => $category_id],
+    //     ]);
+    //     $this->set('subcategories', $subcategories);
+    //     $this->set('_serialize', ['subcategories']);
+    // }
 
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The subcategory could not be saved. Please, try again.'));
-        }
-        $categories = $this->Subcategories->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('subcategory', 'categories'));
-    }
+    // /**
+    //  * Add method
+    //  *
+    //  * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
+    //  */
+    // public function add()
+    // {
+    //     $subcategory = $this->Subcategories->newEntity();
+    //     if ($this->request->is('post')) {
+    //         $subcategory = $this->Subcategories->patchEntity($subcategory, $this->request->getData());
+    //         if ($this->Subcategories->save($subcategory)) {
+    //             $this->Flash->success(__('The subcategory has been saved.'));
 
-    /**
-     * Edit method
-     *
-     * @param string|null $id Subcategory id.
-     * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
-    public function edit($id = null)
-    {
-        $subcategory = $this->Subcategories->get($id, [
-            'contain' => []
-        ]);
-        if ($this->request->is(['patch', 'post', 'put'])) {
-            $subcategory = $this->Subcategories->patchEntity($subcategory, $this->request->getData());
-            if ($this->Subcategories->save($subcategory)) {
-                $this->Flash->success(__('The subcategory has been saved.'));
+    //             return $this->redirect(['action' => 'index']);
+    //         }
+    //         $this->Flash->error(__('The subcategory could not be saved. Please, try again.'));
+    //     }
+    //     $categories = $this->Subcategories->Categories->find('list', ['limit' => 200]);
+    //     $this->set(compact('subcategory', 'categories'));
+    // }
 
-                return $this->redirect(['action' => 'index']);
-            }
-            $this->Flash->error(__('The subcategory could not be saved. Please, try again.'));
-        }
-        $categories = $this->Subcategories->Categories->find('list', ['limit' => 200]);
-        $this->set(compact('subcategory', 'categories'));
-    }
+    // /**
+    //  * Edit method
+    //  *
+    //  * @param string|null $id Subcategory id.
+    //  * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
+    //  * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+    //  */
+    // public function edit($id = null)
+    // {
+    //     $subcategory = $this->Subcategories->get($id, [
+    //         'contain' => []
+    //     ]);
+    //     if ($this->request->is(['patch', 'post', 'put'])) {
+    //         $subcategory = $this->Subcategories->patchEntity($subcategory, $this->request->getData());
+    //         if ($this->Subcategories->save($subcategory)) {
+    //             $this->Flash->success(__('The subcategory has been saved.'));
 
-    /**
-     * Delete method
-     *
-     * @param string|null $id Subcategory id.
-     * @return \Cake\Http\Response|null Redirects to index.
-     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
-     */
-    public function delete($id = null)
-    {
-        $this->request->allowMethod(['post', 'delete']);
-        $subcategory = $this->Subcategories->get($id);
-        if ($this->Subcategories->delete($subcategory)) {
-            $this->Flash->success(__('The subcategory has been deleted.'));
-        } else {
-            $this->Flash->error(__('The subcategory could not be deleted. Please, try again.'));
-        }
+    //             return $this->redirect(['action' => 'index']);
+    //         }
+    //         $this->Flash->error(__('The subcategory could not be saved. Please, try again.'));
+    //     }
+    //     $categories = $this->Subcategories->Categories->find('list', ['limit' => 200]);
+    //     $this->set(compact('subcategory', 'categories'));
+    // }
 
-        return $this->redirect(['action' => 'index']);
-    }
+    // /**
+    //  * Delete method
+    //  *
+    //  * @param string|null $id Subcategory id.
+    //  * @return \Cake\Http\Response|null Redirects to index.
+    //  * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+    //  */
+    // public function delete($id = null)
+    // {
+    //     $this->request->allowMethod(['post', 'delete']);
+    //     $subcategory = $this->Subcategories->get($id);
+    //     if ($this->Subcategories->delete($subcategory)) {
+    //         $this->Flash->success(__('The subcategory has been deleted.'));
+    //     } else {
+    //         $this->Flash->error(__('The subcategory could not be deleted. Please, try again.'));
+    //     }
+
+    //     return $this->redirect(['action' => 'index']);
+    // }
 }
