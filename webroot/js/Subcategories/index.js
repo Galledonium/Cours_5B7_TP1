@@ -4,15 +4,15 @@ function getSubcategories() {
         url: urlToRestApi,
         dataType: "json",
         success:
-                function (categories) {
-                    var categorieTable = $('#$subcategorieData');
+                function (subcategories) {
+                    var categorieTable = $('#subcategorieData');
                     categorieTable.empty();
                     var count = 1;
-                    $.each(categories.data, function (key, value)
+                    $.each(subcategories.data, function (key, value)
                     {
                         var editDeleteButtons = '</td><td>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editcategorie(' + value.id + ')"></a>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? categorieAction(\'delete\', ' + value.id + ') : false;"></a>' +
+                                '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editSubcategories(' + value.id + ')"></a>' +
+                                '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? subcategorieAction(\'delete\', ' + value.id + ') : false;"></a>' +
                                 '</td></tr>';
                         categorieTable.append('<tr><td>' + count + '</td><td>' + value.name + '</td><td>' + value.category_id + editDeleteButtons);
                         count++;
@@ -48,14 +48,14 @@ function subcategorieAction(type, id) {
     id = (typeof id == "undefined") ? '' : id;
     var statusArr = {add: "added", edit: "updated", delete: "deleted"};
     var requestType = '';
-    var $subcategorieData = '';
+    var subcategorieData = '';
     var ajaxUrl = urlToRestApi;
     if (type == 'add') {
         requestType = 'POST';
-        $subcategorieData = convertFormToJSON($("#addForm").find('.form'));
+        subcategorieData = convertFormToJSON($("#addForm").find('.form'));
     } else if (type == 'edit') {
         requestType = 'PUT';
-        $subcategorieData = convertFormToJSON($("#editForm").find('.form'));
+        subcategorieData = convertFormToJSON($("#editForm").find('.form'));
     } else {
         requestType = 'DELETE';
         ajaxUrl = ajaxUrl + "/" + id;
@@ -65,11 +65,11 @@ function subcategorieAction(type, id) {
         url: ajaxUrl,
         dataType: "json",
         contentType: "application/json; charset=utf-8",
-        data: JSON.stringify($subcategorieData),
+        data: JSON.stringify(subcategorieData),
         success: function (msg) {
             if (msg) {
-                alert('categorie data has been ' + statusArr[type] + ' successfully.');
-                getcategories();
+                alert('Subcategorie data has been ' + statusArr[type] + ' successfully.');
+                getSubcategories();
                 $('.form')[0].reset();
                 $('.formData').slideUp();
             } else {
@@ -88,7 +88,7 @@ function editSubcategories(id) {
         success: function (data) {
             $('#idEdit').val(data.data.id);
             $('#nameEdit').val(data.data.name);
-            $('#categorieEdit').val(data.data.category_id);
+            $('#subcategorieEdit').val(data.data.category_id);
             $('#editForm').slideDown();
         }
     });

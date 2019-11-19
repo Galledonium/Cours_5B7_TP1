@@ -41,7 +41,7 @@ $this->end();
                     </div>
                     <div class="form-group">
                         <label>categorie_id</label>
-                        <input type="text" class="form-control" name="categorieEdit" id="categorieEdit"/>
+                        <input type="text" class="form-control" name="subcategorieEdit" id="subcategorieEdit"/>
                     </div>
                     <input type="hidden" class="form-control" name="id" id="idEdit"/>
                     <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>

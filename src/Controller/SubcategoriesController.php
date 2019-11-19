@@ -20,6 +20,18 @@ class SubcategoriesController extends AppController
         $this->viewBuilder()->setLayout('monopage');
     }
 
+    public $paginate = [
+        'page' => 1,
+        'limit' => 10,
+        'maxLimit' => 100,
+        // 'fields' => [
+        //     'id', 'category_id', 'name'
+        // ],
+        'sortWhitelist' => [
+            'id', 'category_id', 'name'
+        ]
+    ];
+
     /**
      * Index method
      *

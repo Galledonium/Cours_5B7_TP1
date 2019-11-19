@@ -31,7 +31,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             'base.css',
             'style.css',
             'http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
-            'Cocktails/basic.css',
+            'Subcategories/basic.css',
             'https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'
         ]);
         ?>
