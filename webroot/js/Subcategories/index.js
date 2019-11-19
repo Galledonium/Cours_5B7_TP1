@@ -5,16 +5,16 @@ function getSubcategories() {
         dataType: "json",
         success:
                 function (subcategories) {
-                    var categorieTable = $('#subcategorieData');
-                    categorieTable.empty();
+                    var cocktailTable = $('#subcategoryData');
+                    cocktailTable.empty();
                     var count = 1;
-                    $.each(subcategories.data, function (key, value)
+                    $.each(cocktails.data, function (key, value)
                     {
                         var editDeleteButtons = '</td><td>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editSubcategories(' + value.id + ')"></a>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? subcategorieAction(\'delete\', ' + value.id + ') : false;"></a>' +
+                                '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editCocktail(' + value.id + ')"></a>' +
+                                '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? cocktailAction(\'delete\', ' + value.id + ') : false;"></a>' +
                                 '</td></tr>';
-                        categorieTable.append('<tr><td>' + count + '</td><td>' + value.name + '</td><td>' + value.category_id + editDeleteButtons);
+                        cocktailTable.append('<tr><td>' + count + '</td><td>' + value.name + '</td><td>' + value.description + editDeleteButtons);
                         count++;
                     });
 
@@ -36,7 +36,7 @@ function convertFormToJSON(form) {
 }
 
 /*
- $('#categorieAddForm').submit(function (e) {
+ $('#cocktailAddForm').submit(function (e) {
  e.preventDefault();
  var data = convertFormToJSON($(this));
  alert(data);
@@ -44,18 +44,18 @@ function convertFormToJSON(form) {
  });
  */
 
-function subcategorieAction(type, id) {
+function cocktailAction(type, id) {
     id = (typeof id == "undefined") ? '' : id;
     var statusArr = {add: "added", edit: "updated", delete: "deleted"};
     var requestType = '';
-    var subcategorieData = '';
+    var cocktailData = '';
     var ajaxUrl = urlToRestApi;
     if (type == 'add') {
         requestType = 'POST';
-        subcategorieData = convertFormToJSON($("#addForm").find('.form'));
+        cocktailData = convertFormToJSON($("#addForm").find('.form'));
     } else if (type == 'edit') {
         requestType = 'PUT';
-        subcategorieData = convertFormToJSON($("#editForm").find('.form'));
+        cocktailData = convertFormToJSON($("#editForm").find('.form'));
     } else {
         requestType = 'DELETE';
         ajaxUrl = ajaxUrl + "/" + id;
@@ -65,11 +65,11 @@ function subcategorieAction(type, id) {
         url: ajaxUrl,
         dataType: "json",
         contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(subcategorieData),
+        data: JSON.stringify(cocktailData),
         success: function (msg) {
             if (msg) {
-                alert('Subcategorie data has been ' + statusArr[type] + ' successfully.');
-                getSubcategories();
+                alert('Cocktail data has been ' + statusArr[type] + ' successfully.');
+                getCocktails();
                 $('.form')[0].reset();
                 $('.formData').slideUp();
             } else {
@@ -80,7 +80,7 @@ function subcategorieAction(type, id) {
 }
 
 /*** à déboguer ... ***/
-function editSubcategories(id) {
+function editCocktail(id) {
     $.ajax({
         type: 'GET',
         dataType: 'JSON',
@@ -88,7 +88,7 @@ function editSubcategories(id) {
         success: function (data) {
             $('#idEdit').val(data.data.id);
             $('#nameEdit').val(data.data.name);
-            $('#subcategorieEdit').val(data.data.category_id);
+            $('#descriptionEdit').val(data.data.description);
             $('#editForm').slideDown();
         }
     });
