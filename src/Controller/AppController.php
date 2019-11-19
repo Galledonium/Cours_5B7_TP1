@@ -26,8 +26,8 @@ use Cake\I18n\I18n;
  *
  * @link https://book.cakephp.org/3.0/en/controllers.html#the-app-controller
  */
-//class AppController extends Controller
-//{
+class AppController extends Controller
+{
 
     /**
      * Initialization hook method.
@@ -38,14 +38,16 @@ use Cake\I18n\I18n;
      *
      * @return void
      */
-    // public function initialize()
-    // {
-    //     parent::initialize();
+    public function initialize()
+    {
+        parent::initialize();
 
-    //     $this->loadComponent('RequestHandler', [
-    //         'enableBeforeRedirect' => false,
-    //     ]);
-    //     $this->loadComponent('Flash');
+        $this->loadComponent('RequestHandler', [
+            'enableBeforeRedirect' => false,
+        ]);
+        $this->loadComponent('Flash');
+
+        $this->viewBuilder()->setLayout('default');
 
         /*
          * Enable the following component for recommended CakePHP security settings.
@@ -53,75 +55,75 @@ use Cake\I18n\I18n;
          */
         //$this->loadComponent('Security');
 
-        // $this->loadComponent('Auth', [
-        // // La ligne suivante a été ajoutée
-        // 'authorize'=> 'Controller',
-        // 'authenticate' => [
-        //     'Form' => [
-        //         'fields' => [
-        //             'username' => 'email',
-        //             'password' => 'password'
-        //         ]
-        //     ]
-        // ],
-        // 'loginAction' => [
-        //     'controller' => 'Users',
-        //     'action' => 'login'
-        // ],
-        //  // Si pas autorisé, on renvoit sur la page précédente
-        // 'unauthorizedRedirect' => $this->referer()
-        // ]);
+        $this->loadComponent('Auth', [
+        // La ligne suivante a été ajoutée
+        'authorize'=> 'Controller',
+        'authenticate' => [
+            'Form' => [
+                'fields' => [
+                    'username' => 'email',
+                    'password' => 'password'
+                ]
+            ]
+        ],
+        'loginAction' => [
+            'controller' => 'Users',
+            'action' => 'login'
+        ],
+         // Si pas autorisé, on renvoit sur la page précédente
+        'unauthorizedRedirect' => $this->referer()
+        ]);
 
-        // I18n::setLocale($this->request->session()->read('Config.language'));
+        I18n::setLocale($this->request->session()->read('Config.language'));
 
-        // $this->Auth->allow(['changelang']);
+        $this->Auth->allow(['changelang']);
 
         // Permet à l'action "display" de notre PagesController de continuer
         // à fonctionner. Autorise également les actions "read-only".
-        //$this->Auth->allow(['display']); //-> COMMENT: pour forcer le login dès le début pour le moment.
-    //}
+        $this->Auth->allow(['display']); //-> COMMENT: pour forcer le login dès le début pour le moment.
+    }
 
-    // public function changeLang($lang = 'en_US') {
+    public function changeLang($lang = 'en_US') {
         
-    //     I18n::setLocale($lang);
-    //     $this->request->session()->write('Config.language', $lang);
-    // }
+        I18n::setLocale($lang);
+        $this->request->session()->write('Config.language', $lang);
+    }
 
-    // public function getLang(){
+    public function getLang(){
 
-    //     return $this->langCourante;
+        return $this->langCourante;
 
-    // }
+    }
     
 
-    // public function isAuthorized($user)
-    // {
+    public function isAuthorized($user)
+    {
 
-    //     // Par défaut, on refuse l'accès.
-    //     return false;
+        // Par défaut, on refuse l'accès.
+        return false;
 
-    // }
-//}
-
-class AppController extends Controller {
-
-    use \Crud\Controller\ControllerTrait;
-
-    public $components = [
-        'RequestHandler',
-        'Crud.Crud' => [
-            'actions' => [
-                'Crud.Index',
-                'Crud.View',
-                'Crud.Add',
-                'Crud.Edit',
-                'Crud.Delete'
-            ],
-            // 'listeners' => [
-            //     'Crud.Api',
-            //     'Crud.ApiPagination',
-            //     'Crud.ApiQueryLog'
-            // ]
-        ]
-    ];
+    }
 }
+
+// class AppController extends Controller {
+
+//     use \Crud\Controller\ControllerTrait;
+
+//     public $components = [
+//         'RequestHandler',
+//         'Crud.Crud' => [
+//             'actions' => [
+//                 'Crud.Index',
+//                 'Crud.View',
+//                 'Crud.Add',
+//                 'Crud.Edit',
+//                 'Crud.Delete'
+//             ],
+//             // 'listeners' => [
+//             //     'Crud.Api',
+//             //     'Crud.ApiPagination',
+//             //     'Crud.ApiQueryLog'
+//             // ]
+//         ]
+//     ];
+// }
