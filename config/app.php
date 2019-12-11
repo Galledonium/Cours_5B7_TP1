@@ -284,7 +284,7 @@ return [
             //'username' => 'root',
             //'password' => 'mysql',
             //'database' => 'bd_application_mobile_5b7',
-            'database' => ROOT . DS . 'sqlite' . DS . 'default.sqlite',
+            'database' => ROOT . DS . 'sqlite' . DS . 'test.sqlite',
             /*
              * You do not need to set this flag to use full utf-8 encoding (internal default since CakePHP 3.6).
              */
