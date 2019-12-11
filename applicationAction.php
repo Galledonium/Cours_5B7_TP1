@@ -24,10 +24,10 @@ if(!empty($_POST['action_type'])){
         if(!empty($applications)){
             foreach($applications as $row){
                 echo '<tr>';
-                echo '<td>#'.$row['name'].'</td>';
-                echo '<td>'.$row['description'].'</td>';
-                echo '<td>'.$row['price'].'</td>';
-                echo '<td>'.$row['evaluation'].'</td>';
+                echo '<td>#'.$row['id'].'</td>';
+                echo '<td>'.$row['name'].'</td>';
+                echo '<td>'.$row['email'].'</td>';
+                echo '<td>'.$row['phone'].'</td>';
                 echo '<td><a href="javascript:void(0);" class="btn btn-warning" rowID="'.$row['id'].'" data-type="edit" data-toggle="modal" data-target="#modalappl$applicationsAddEdit">edit</a>
                 <a href="javascript:void(0);" class="btn btn-danger" onclick="return confirm(\'Are you sure to delete data?\')?appl$applicationsAction(\'delete\', \''.$row['id'].'\'):false;">delete</a></td>';
                 echo '</tr>';
@@ -41,28 +41,29 @@ if(!empty($_POST['action_type'])){
         
         // Get appl$applications's input
         $name = $_POST['name'];
-        $description = $_POST['description'];
-        $prix = $_POST['prix'];
-        $evaluation = $_POST['evaluation'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
         
         // Validate form fields
         if(empty($name)){
             $verr = 1;
-            $msg .= 'Please enter the app\'s name<br/>';
+            $msg .= 'Please enter your name.<br/>';
         }
-        if(empty($prix)){
+        if(empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
             $verr = 1;
-            $msg .= 'Please enter the app\'s price.<br/>';
+            $msg .= 'Please enter a valid email.<br/>';
         }
-
+        if(empty($phone)){
+            $verr = 1;
+            $msg .= 'Please enter your phone no.<br/>';
+        }
         
         if($verr == 0){
             // Insert data in the database
             $applicationsData = array(
                 'name'  => $name,
-                'description' => $description,
-                'prix' => $prix,
-                'evaluation' => $evaluation
+                'email' => $email,
+                'phone' => $phone
             );
             $insert = $db->insert($tblName, $applicationsData);
             
@@ -89,26 +90,29 @@ if(!empty($_POST['action_type'])){
         if(!empty($_POST['id'])){
             // Get appl$applications's input
             $name = $_POST['name'];
-            $description = $_POST['description'];
-            $prix = $_POST['prix'];
-            $evaluation = $_POST['evaluation'];
+            $email = $_POST['email'];
+            $phone = $_POST['phone'];
             
             // Validate form fields
             if(empty($name)){
                 $verr = 1;
-                $msg .= 'Please enter the app\'s name<br/>';
+                $msg .= 'Please enter your name.<br/>';
             }
-            if(empty($prix)){
+            if(empty($email) || !filter_var($email, FILTER_VALIDATE_EMAIL)){
                 $verr = 1;
-                $msg .= 'Please enter the app\'s price.<br/>';
+                $msg .= 'Please enter a valid email.<br/>';
             }
+            if(empty($phone)){
+                $verr = 1;
+                $msg .= 'Please enter your phone no.<br/>';
+            }
+            
             if($verr == 0){
                 // Update data in the database
                 $applicationsData = array(
                     'name'  => $name,
-                    'description' => $description,
-                    'prix' => $prix,
-                    'evaluation' => $evaluation
+                    'email' => $email,
+                    'phone' => $phone
                 );
                 $condition = array('id' => $_POST['id']);
                 $update = $db->update($tblName, $applicationsData, $condition);

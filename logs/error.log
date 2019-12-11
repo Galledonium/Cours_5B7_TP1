@@ -11348,6 +11348,7 @@ Exception Attributes: array (
 Request URL: /subcategories.json
 
 
+<<<<<<< HEAD
 2019-11-18 23:59:27 Warning: Warning (2): require_once(DB.class.php): failed to open stream: No such file or directory in [C:\UniServerZ\www\Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb\Cours_5B7_TP1\src\Template\Applications\index.ctp, line 5]
 Request URL: /
 Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/
@@ -13895,3 +13896,5 @@ Request URL: /css/Subcategories/basic.css
 Referer URL: http://localhost/Application_Mobile_5B7-82fbf504cd3932842c7dc922e40584521e5981bb/Cours_5B7_TP1/subcategories
 
 
+=======
+>>>>>>> parent of 2dd9a9e... Monopage

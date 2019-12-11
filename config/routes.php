@@ -46,9 +46,8 @@ use Cake\Routing\Route\DashedRoute;
  */
 Router::defaultRouteClass(DashedRoute::class);
 
-$routes->extensions(['json', 'xml']);
-
 Router::prefix('api', function ($routes) {
+    $routes->extensions(['json', 'xml']);
     $routes->resources('Subcategories');
 });
 
