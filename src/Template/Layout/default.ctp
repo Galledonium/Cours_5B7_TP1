@@ -20,6 +20,9 @@ $cakeDescription = __('msgDesc');
 <!DOCTYPE html>
 <html>
 <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
+    
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>

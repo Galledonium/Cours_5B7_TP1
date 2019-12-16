@@ -60,6 +60,19 @@ class CategoriesController extends AppController
         $this->set(compact('category'));
     }
 
+    public function getCategories() {
+        $this->autoRender = false; // avoid to render view
+
+        $categories = $this->Categories->find('all', [
+            'contain' => ['Subcategories'],
+        ]);
+
+        $categoriesJ = json_encode($categories);
+        $this->response->type('json');
+        $this->response->body($categoriesJ);
+
+    }
+
     /**
      * Edit method
      *

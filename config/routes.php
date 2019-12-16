@@ -46,10 +46,7 @@ use Cake\Routing\Route\DashedRoute;
  */
 Router::defaultRouteClass(DashedRoute::class);
 
-Router::prefix('api', function ($routes) {
-    $routes->extensions(['json', 'xml']);
-    $routes->resources('Subcategories');
-});
+Router::extensions(['json', 'xml']);
 
 Router::scope('/', function (RouteBuilder $routes) {
 
@@ -63,7 +60,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * Apply a middleware to the current route scope.
      * Requires middleware to be registered via `Application::routes()` with `registerMiddleware()`
      */
-    $routes->applyMiddleware('csrf');
+    //$routes->applyMiddleware('csrf');
 
     $routes->connect('locale', ['controller'=>'Localizations','action'=>'index']);
 

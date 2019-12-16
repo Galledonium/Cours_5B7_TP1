@@ -97,11 +97,19 @@ class ApplicationsController extends AppController
             }
             $this->Flash->error(__('The application could not be saved. Please, try again.'));
         }
+
+        $this->loadModel('Categories');
+        $categories = $this->Categories->find('list', ['limit' => 200]);
+
+        $categories = $categories->toArray();
+        reset($categories);
+        $category_id = key($categories);
+
         $files = $this->Applications->Files->find('list', ['limit' => 200]);
-        $subcategories = $this->Applications->Subcategories->find('list', ['limit' => 200]);
-        $categories = $this->Applications->Categories->find('list', ['limit' => 200]);
+        $subcategories = $this->Applications->Subcategories->find('list', ['conditions' => ['Subcategories.category_id' => $category_id]]);
         $users = $this->Applications->Users->find('list', ['limit' => 200]);
         $this->set(compact('application', 'files', 'subcategories', 'categories', 'users'));
+        $this->set('_serialize', ['application', 'files', 'subcategories', 'categories', 'users']);
     }
 
     /**
