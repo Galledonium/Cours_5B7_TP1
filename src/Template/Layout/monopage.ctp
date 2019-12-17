@@ -17,7 +17,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 <!DOCTYPE html>
 <html>
     <head>
-    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
         <?= $this->Html->charset() ?>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
@@ -47,36 +47,35 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         );
         ?>
     </head>
-</head>
-<body>
-    <nav class="top-bar expanded" data-topbar role="navigation">
-        <ul class="title-area large-3 medium-4 columns">
-            <li class="name">
-                <h1><a href=""><?= $this->fetch('title') ?></a></h1>
-            </li>
-        </ul>
-        <div class="top-bar-section">
-            <ul class="right">
-                <li><?=
-                    $this->Html->link('Section Admin en PHP', [
-                        'controller' => 'Subcategories',
-                        'action' => 'index'
-                    ]);
-                    ?>
+    <body>
+        <nav class="top-bar expanded" data-topbar role="navigation">
+            <ul class="title-area large-3 medium-4 columns">
+                <li class="name">
+                    <h1><a href=""><?= $this->fetch('title') ?></a></h1>
                 </li>
-                <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
-                <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
             </ul>
+            <div class="top-bar-section">
+                <ul class="right">
+                    <li><?=
+                        $this->Html->link('Section Admin en PHP', [
+                            'controller' => 'Subcategories',
+                            'action' => 'index'
+                        ]);
+                        ?>
+                    </li>
+                    <li><a target="_blank" href="https://book.cakephp.org/3.0/">Documentation</a></li>
+                    <li><a target="_blank" href="https://api.cakephp.org/3.0/">API</a></li>
+                </ul>
+            </div>
+        </nav>
+        <?= $this->Flash->render() ?>
+        <div class="container clearfix">
+            <?= $this->fetch('content') ?>
         </div>
-    </nav>
-    <?= $this->Flash->render() ?>
-    <div class="container clearfix">
-        <?= $this->fetch('content') ?>
-    </div>
-    <footer>
-    </footer>
-    <?= $this->fetch('scriptLibraries') ?>
-    <?= $this->fetch('script'); ?>
-    <?= $this->fetch('scriptBottom') ?> 
-</body>
+        <footer>
+        </footer>
+        <?= $this->fetch('scriptLibraries') ?>
+        <?= $this->fetch('script'); ?>
+        <?= $this->fetch('scriptBottom') ?> 
+    </body>
 </html>

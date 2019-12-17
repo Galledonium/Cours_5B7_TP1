@@ -1,95 +1,132 @@
-function getSubcategories() {
-    $.ajax({
-        type: 'GET',
-        url: urlToRestApi,
-        dataType: "json",
-        success:
-                function (subcategories) {
-                    var cocktailTable = $('#subcategoryData');
-                    cocktailTable.empty();
-                    var count = 1;
-                    $.each(cocktails.data, function (key, value)
-                    {
-                        var editDeleteButtons = '</td><td>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editCocktail(' + value.id + ')"></a>' +
-                                '<a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm(\'Are you sure to delete data?\') ? cocktailAction(\'delete\', ' + value.id + ') : false;"></a>' +
-                                '</td></tr>';
-                        cocktailTable.append('<tr><td>' + count + '</td><td>' + value.name + '</td><td>' + value.description + editDeleteButtons);
-                        count++;
-                    });
+var app = angular.module('app', []);
 
-                }
-    });
-}
+app.controller('SubcategoryCRUDCtrl', ['$scope', 'SubcategoryCRUDService', function ($scope, SubcategoryCRUDService) {
 
-/* Function takes a jquery form
- and converts it to a JSON dictionary */
-function convertFormToJSON(form) {
-    var array = $(form).serializeArray();
-    var json = {};
+        $scope.updateSubcategory = function () {
+            SubcategoryCRUDService.updateSubcategory($scope.subcategory.id, $scope.subcategory.name, $scope.subcategory.category_id)
+                    .then(function success(response) {
+                        $scope.message = 'Subcategory data updated!';
+                        $scope.errorMessage = '';
+                    },
+                            function error(response) {
+                                $scope.errorMessage = 'Error updating subcategory!';
+                                $scope.message = '';
+                            });
+        }
 
-    $.each(array, function () {
-        json[this.name] = this.value || '';
-    });
+        $scope.getSubcategory = function () {
+            var id = $scope.subcategory.id;
+            SubcategoryCRUDService.getSubcategory($scope.subcategory.id)
+                    .then(function success(response) {
+                        $scope.subcategory = response.data.data;
+                        $scope.subcategory.id = id;
+                        $scope.message = '';
+                        $scope.errorMessage = '';
+                    },
+                            function error(response) {
+                                $scope.message = '';
+                                if (response.status === 404) {
+                                    $scope.errorMessage = 'Subcategory not found!';
+                                } else {
+                                    $scope.errorMessage = "Error getting subcategory!";
+                                }
+                            });
+        }
 
-    return json;
-}
-
-/*
- $('#cocktailAddForm').submit(function (e) {
- e.preventDefault();
- var data = convertFormToJSON($(this));
- alert(data);
- console.log(data);
- });
- */
-
-function cocktailAction(type, id) {
-    id = (typeof id == "undefined") ? '' : id;
-    var statusArr = {add: "added", edit: "updated", delete: "deleted"};
-    var requestType = '';
-    var cocktailData = '';
-    var ajaxUrl = urlToRestApi;
-    if (type == 'add') {
-        requestType = 'POST';
-        cocktailData = convertFormToJSON($("#addForm").find('.form'));
-    } else if (type == 'edit') {
-        requestType = 'PUT';
-        cocktailData = convertFormToJSON($("#editForm").find('.form'));
-    } else {
-        requestType = 'DELETE';
-        ajaxUrl = ajaxUrl + "/" + id;
-    }
-    $.ajax({
-        type: requestType,
-        url: ajaxUrl,
-        dataType: "json",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(cocktailData),
-        success: function (msg) {
-            if (msg) {
-                alert('Cocktail data has been ' + statusArr[type] + ' successfully.');
-                getCocktails();
-                $('.form')[0].reset();
-                $('.formData').slideUp();
+        $scope.addSubcategory = function () {
+            if ($scope.subcategory != null && $scope.subcategory.name) {
+                SubcategoryCRUDService.addSubcategory($scope.subcategory.name, $scope.subcategory.category_id)
+                        .then(function success(response) {
+                            $scope.message = 'Subcategory added!';
+                            $scope.errorMessage = '';
+                        },
+                                function error(response) {
+                                    $scope.errorMessage = 'Error adding Subcategory!';
+                                    $scope.message = '';
+                                });
             } else {
-                alert('Some problem occurred, please try again.');
+                $scope.errorMessage = 'Please enter a name!';
+                $scope.message = '';
             }
         }
-    });
-}
 
-/*** à déboguer ... ***/
-function editCocktail(id) {
-    $.ajax({
-        type: 'GET',
-        dataType: 'JSON',
-        url: urlToRestApi+ "/" + id,
-        success: function (data) {
-            $('#idEdit').val(data.data.id);
-            $('#nameEdit').val(data.data.name);
-            $('#descriptionEdit').val(data.data.description);
-            $('#editForm').slideDown();
+        $scope.deleteSubcategory = function () {
+            SubcategoryCRUDService.deleteSubcategory($scope.subcategory.id)
+                    .then(function success(response) {
+                        $scope.message = 'Subcategory deleted!';
+                        $scope.subcategory = null;
+                        $scope.errorMessage = '';
+                    },
+                            function error(response) {
+                                $scope.errorMessage = 'Error deleting subcategory!';
+                                $scope.message = '';
+                            })
         }
-    });
-}
+
+        $scope.getAllSubcategories = function () {
+            SubcategoryCRUDService.getAllSubcategories()
+                    .then(function success(response) {
+                        $scope.subcategories = response.data.data;
+                        $scope.message = '';
+                        $scope.errorMessage = '';
+                    },
+                            function error(response) {
+                                $scope.message = '';
+                                $scope.errorMessage = 'Error getting subcategories!';
+                            });
+        }
+
+    }]);
+
+app.service('SubcategoryCRUDService', ['$http', function ($http) {
+
+        this.getSubcategory = function getSubcategory(subcategoryId) {
+            return $http({
+                method: 'GET',
+                url: urlToRestApi + '/' + subcategoryId,
+                headers: { 'X-Requested-With' : 'XMLHttpRequest',
+                    'Accept' : 'application/json'}
+            });
+        }
+
+        this.addSubcategory = function addSubcategory(name, category_id) {
+            return $http({
+                method: 'POST',
+                url: urlToRestApi,
+                data: {name: name, category_id: category_id},
+                headers: { 'X-Requested-With' : 'XMLHttpRequest',
+                    'Accept' : 'application/json'}
+            });
+        }
+
+        this.deleteSubcategory = function deleteSubcategory(id) {
+            return $http({
+                method: 'DELETE',
+                url: urlToRestApi + '/' + id,
+                headers: { 'X-Requested-With' : 'XMLHttpRequest',
+                    'Accept' : 'application/json'}
+            })
+        }
+
+        this.updateSubcategory = function updateSubcategory(id, name, category_id) {
+            return $http({
+                method: 'PATCH',
+                url: urlToRestApi + '/' + id,
+                data: {name: name, category_id: category_id},
+                headers: { 'X-Requested-With' : 'XMLHttpRequest',
+                    'Accept' : 'application/json'}
+            })
+        }
+
+        this.getAllSubcategories = function getAllSubcategories() {
+            return $http({
+                method: 'GET',
+                url: urlToRestApi,
+                headers: { 'X-Requested-With' : 'XMLHttpRequest',
+                    'Accept' : 'application/json'}
+            });
+        }
+
+    }]);
+
+

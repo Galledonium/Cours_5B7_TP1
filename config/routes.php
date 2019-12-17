@@ -17,6 +17,8 @@
  * @link          https://cakephp.org CakePHP(tm) Project
  * @license       https://opensource.org/licenses/mit-license.php MIT License
  */
+
+use Cake\Core\Plugin;
 use Cake\Http\Middleware\CsrfProtectionMiddleware;
 use Cake\Routing\RouteBuilder;
 use Cake\Routing\Router;
@@ -54,6 +56,14 @@ Router::scope('/', function (RouteBuilder $routes) {
     $routes->registerMiddleware('csrf', new CsrfProtectionMiddleware([
         'httpOnly' => true
     ]));
+
+    Router::prefix('api', function ($routes) {
+        $routes->extensions(['json', 'xml']);
+        $routes->resources('Subcategories');
+        $routes->resources('Users');
+        Router::connect('/api/users/register', ['controller' => 'Users', 'action' => 'add', 'prefix' => 'api']);
+        $routes->fallbacks('InflectedRoute');
+    });
 
 
     /**
@@ -100,6 +110,8 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->fallbacks(DashedRoute::class);
 });
+
+Plugin::routes();
 
 /**
  * If you need a different set of middleware or none at all,

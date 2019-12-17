@@ -8,9 +8,10 @@ class AppController extends Controller
 {
     use \Crud\Controller\ControllerTrait;
 
-    public $components = [
-        'RequestHandler',
-        'Crud.Crud' => [
+    public function initialize() {
+        parent::initialize();
+        $this->loadComponent('RequestHandler');
+        $this->loadComponent('Crud.Crud', [
             'actions' => [
                 'Crud.Index',
                 'Crud.View',
@@ -23,6 +24,7 @@ class AppController extends Controller
                 'Crud.ApiPagination',
                 'Crud.ApiQueryLog'
             ]
-        ]
-    ];
+        ]);
+
+    }
 }

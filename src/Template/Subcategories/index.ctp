@@ -4,30 +4,41 @@
  * @var \App\Model\Entity\Subcategory[]|\Cake\Collection\CollectionInterface $subcategories
  */
 ?>
-<<<<<<< HEAD
 
 <?php
-$this->end();
+    $urlToRestApi = $this->Url->build([
+        'prefix' => 'api',
+        'controller' => 'Subcategories'], true);
+    echo $this->Html->scriptBlock('var urlToRestApi = "' . $urlToRestApi . '";', ['block' => true]);
+    echo $this->Html->script('Subcategories/index', ['block' => 'scriptBottom']);
 ?>
 
-<div class="container">
+<div class="container" ng-app="app" ng-controller="SubcategoryCRUDCtrl">
     <div class="row">
         <!-- <div class="panel panel-default cocktails-content">TODO A VERIFIER --> 
         <div class="panel panel-default subcategories-content">
             <div class="panel-heading">Subcategories <a href="javascript:void(0);" class="glyphicon glyphicon-plus" id="addLink" onclick="javascript:$('#addForm').slideToggle();">Add</a></div>
             <div class="panel-body none formData" id="addForm">
                 <h2 id="actionLabel">Add Subcategorie</h2>
-                <form class="form" id="subcategorieAddForm" enctype='application/json'>
+                <form class="form" id="subcategoryAddForm" enctype='application/json'>
+
                     <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" class="form-control" name="name" id="name"/>
+                    
+                        <label width="100">Name:</label>
+                        <input type="text" id="name" ng-model="subcategory.name" />
+
                     </div>
                     <div class="form-group">
-                        <label>categorie_id</label>
-                        <input type="text" class="form-control" name="categorie" id="categorie"/>
+
+                        <label width="100">Category Id:</label>
+                        <input type="text" id="description" ng-model="subcategory.category_id" />
+
                     </div>
-                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
-                    <a href="javascript:void(0);" class="btn btn-success" onclick="subcategorieAction('add')">Add Subcategorie</a>
+
+                    <!-- <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a> -->
+                    <a class="btn btn-warning" onclick="$('#addForm').slideUp();">Cancel</a>
+                    <!-- <a href="javascript:void(0);" class="btn btn-success" ng-click="addSubcategory(subcategory.name, subcategory.category_id)">Add Subcategory</a> -->
+                    <a class="btn btn-success" ng-click="addSubcategory(subcategory.name, subcategory.category_id)">Add Subcategory</a>
                     <!-- input type="submit" class="btn btn-success" id="addButton" value="Add Cocktail" -->
                 </form>
             </div>
@@ -43,8 +54,9 @@ $this->end();
                         <input type="text" class="form-control" name="subcategorieEdit" id="subcategorieEdit"/>
                     </div>
                     <input type="hidden" class="form-control" name="id" id="idEdit"/>
-                    <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>
-                    <a href="javascript:void(0);" class="btn btn-success" onclick="subcategorieAction('edit')">Update Subcategorie</a>
+                    <a class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a>
+                    <!-- <a href="javascript:void(0);" class="btn btn-warning" onclick="$('#editForm').slideUp();">Cancel</a> -->
+                    <a class="btn btn-success" ng-click="updateSubcategory(subcategory.id, subcategory.name, subcategory.category_id)">Update Subcategory</a> 
                     <!-- input type="submit" class="btn btn-success" id="editButton" value="Update Cocktail" -->
                 </form>
             </div>
@@ -67,8 +79,8 @@ $this->end();
                             <td><?php echo $subcategorie['name']; ?></td>
                             <td><?php echo $subcategorie['category_id']; ?></td>
                             <td>
-                                <a href="javascript:void(0);" class="glyphicon glyphicon-edit" onclick="editSubcategorie('<?php echo $subcategorie['id']; ?>')"></a>
-                                <a href="javascript:void(0);" class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete data?') ? subcategorieAction('delete', '<?php echo $subcategorie['id']; ?>') : false;"></a>
+                                <a ng-click="getSubcategory(subcategory.id)">Get Cocktail</a>  
+                                <a ng-click="deleteSubcategory(subcategory.id)">Delete Cocktail</a>
                             </td>
                         </tr>
                         <?php
@@ -78,50 +90,23 @@ $this->end();
                 </tbody>
             </table>
         </div>
-=======
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('New Subcategory'), ['action' => 'add']) ?></li>
-        <li><?= $this->Html->link(__('List Categories'), ['controller' => 'Categories', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Category'), ['controller' => 'Categories', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="subcategories index large-9 medium-8 columns content">
-    <h3><?= __('Subcategories') ?></h3>
-    <table cellpadding="0" cellspacing="0">
-        <thead>
-            <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('category_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('name') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($subcategories as $subcategory): ?>
-            <tr>
-                <td><?= $this->Number->format($subcategory->id) ?></td>
-                <td><?= $subcategory->has('category') ? $this->Html->link($subcategory->category->name, ['controller' => 'Categories', 'action' => 'view', $subcategory->category->id]) : '' ?></td>
-                <td><?= h($subcategory->name) ?></td>
-                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $subcategory->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $subcategory->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $subcategory->id], ['confirm' => __('Are you sure you want to delete # {0}?', $subcategory->id)]) ?>
-                </td>
-            </tr>
-            <?php endforeach; ?>
-        </tbody>
-    </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
->>>>>>> parent of 2dd9a9e... Monopage
     </div>
+</div>
+
+
+<div class="container" ng-app="app" ng-controller="SubcategoryCRUDCtrl">
+    <table ng-init="getAllSubcategories">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Category Id
+            </th>
+        </tr>
+        <tr ng-repeat="subcategory in subcategories">
+            <td>{{subcategory.name}}</td>
+            <td>{{subcategory.categorie_id}}</td>
+        </tr>
+    </table>
 </div>
